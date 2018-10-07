@@ -1,0 +1,12 @@
+
+.nav-basis-settings {
+    font-size: 18px;
+    height: 80px;
+
+    background-color:  var(--dark-raptor);
+}
+
+.logo {
+    height: 95px;
+    margin-top: 7px;
+}

@@ -1,0 +1,19 @@
+:root{
+    --dark-raptor:  #252a30;
+    --dark-light-raptor: #363c42;
+    --blue-dark-raptor: #375688;
+    --blue-light-raptor:  #119ac7;
+    --green-dark-raptor:   #379068;
+    --green-light-raptor:   #60ba80;
+}
+
+body {
+    background-color:  var(--blue-dark-raptor);
+}
+
+
+
+
+
+
+
