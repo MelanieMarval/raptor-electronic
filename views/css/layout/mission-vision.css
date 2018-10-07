@@ -1,0 +1,10 @@
+.mission-vision__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission-vision{
+    text-align: center;
+    padding: var(--gutter);
+    border: 1px solid #777;
+}

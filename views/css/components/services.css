@@ -1,0 +1,16 @@
+.services-additionals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service-addtional{
+    display: flex;
+    border: 1px solid #999;
+    padding: 5px;
+    margin: 5px;
+    width: 31em;
+}
+.content{
+    margin-left: 1em;
+}

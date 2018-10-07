@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("../fonts/Roboto-Black.ttf"),
+    url("../fonts/Roboto-BlackItalic.ttf"),
+    url("../fonts/Roboto-Bold.ttf"),
+    url("../fonts/Roboto-BoldItalic.ttf"),
+    url("../fonts/Roboto-Light.ttf"),
+    url("../fonts/Roboto-LightItalic.ttf"),
+    url("../fonts/Roboto-Medium.ttf"),
+    url("../fonts/Roboto-MediumItalic.ttf"),
+    url("../fonts/Roboto-Regular.ttf"),
+    url("../fonts/Roboto-Thin.ttf"),
+    url("../fonts/Roboto-ThinItalic.ttf")
+}
+html{
+    box-sizing: border-box;
+    font-family: 'Roboto',"Open Sans","Helvetica Neue", sans-serif;
+}
+*,
+:before,
+:after{
+    margin: 0;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+h4{
+    font-size: 18px;
+}
+h5{
+    font-size: 14px;
+}
+
+:root{
+    --primary-color: #666666;
+    --secondary-color: #ttt;
+
+    --gutter: 20px;
+}
+.image-circular{
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+}

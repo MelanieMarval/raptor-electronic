@@ -1,0 +1,43 @@
+.values{
+    width: 60%;
+}
+
+.value{
+    display: grid;
+    grid-template-columns: 3em 3fr 1fr;
+    grid-template-rows: 3em 1fr;
+    grid-template-areas: 'image tittle'
+                        'image bar percentage';
+    margin: var(--gutter) 0;
+}
+.value__tittle{
+    grid-area: tittle;
+    width: 100%;
+}
+.value__img{
+    grid-area: image;
+
+}
+.value__percentage{
+    grid-area: percentage;
+}
+
+.value__bar{
+    grid-area: bar;
+    width: 80%;
+    height: 20px;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+
+}
+.value__progress-bar{
+    width: 81%;
+    height: 20px;
+    background-color: #004085;
+    border-bottom-left-radius: 0.25rem;
+    border-top-left-radius: 0.25rem;
+}
+
+.values-img{
+    width: 40%;
+}
