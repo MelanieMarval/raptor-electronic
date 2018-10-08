@@ -1,3 +1,8 @@
+body {
+    background-color:  var(--blue-dark-raptor);
+}
+
+
 @font-face {
     font-family: 'Roboto';
     src: url("../fonts/Roboto-Black.ttf"),
@@ -34,21 +39,21 @@ li{
 h2, h3, h4, h5, h6{
     font-weight: normal;
 }
-h4{
-    font-size: 18px;
-}
-h5{
-    font-size: 14px;
-}
 
 :root{
-    --primary-color: #666666;
-    --secondary-color: #ttt;
-
-    --gutter: 20px;
+    --dark-raptor:  #252a30;
+    --dark-light-raptor: #363c42;
+    --blue-dark-raptor: #375688;
+    --blue-light-raptor:  #119ac7;
+    --green-dark-raptor:   #379068;
+    --green-light-raptor:   #60ba80;
 }
 .image-circular{
     width: 4em;
     height: 4em;
     border-radius: 100%;
+    margin-right: 1em;
+}
+.column-2{
+    width: 50%;
 }

@@ -1,3 +1,14 @@
+.mission-vision__container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission-vision{
+    text-align: center;
+    padding: 2.5em;
+    border: 1px solid #777;
+}
+
 .values{
     width: 60%;
 }
@@ -7,8 +18,8 @@
     grid-template-columns: 3em 3fr 1fr;
     grid-template-rows: 3em 1fr;
     grid-template-areas: 'image tittle'
-                        'image bar percentage';
-    margin: var(--gutter) 0;
+    'image bar percentage';
+    margin: 2.5em 0;
 }
 .value__tittle{
     grid-area: tittle;

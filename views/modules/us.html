@@ -3,44 +3,72 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width+device-width, initial-scale= 1.0, maximun-scale= 3.0, minimum-scale= 0.86">
-        <title>Raptor Electronic - Nosotros</title>
-        <link rel="stylesheet" href="../css/bootstrap.css">
-        <link rel="stylesheet" href="../css/base.css">
-        <link rel="stylesheet" href="../css/components/values.css">
-        <link rel="stylesheet" href="../css/components/banner.css">
-        <link rel="stylesheet" href="../css/layout/mission-vision.css">
+        <title>Raptor Electronic | Nosotros</title>
+        <link rel="stylesheet" href="../css/components/us.css">
         <link rel="stylesheet" href="../css/components/tab-tittle.css">
-        <link rel="stylesheet" href="../css/loading-bar.css">
-        <link rel="stylesheet" href="../css/layout/columns-divide.css">
+        <link rel="stylesheet" href="../css/components/banner.css">
+        <link rel="stylesheet" href="../css/components/header.css">
+        <link rel="stylesheet" href="../css/components/footer.css">
+        <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="../css/base.css">
     </head>
     <body>
-        <main class="tab-tittle">
-            <h1 class="tittle">NOSOTROS</h1>
-        </main>
+    
+        <!-----------NAVBAR------------>
+        <header class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-dark nav-basis-settings">
+                <a class="navbar-brand" href="#">
+                    <img src="../images/raptor-logo.png" class="logo" alt="raptor electronic logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#">Productos <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#">Servicios</a>
+                        <a class="nav-item nav-link" href="#">Estado de Servicio</a>
+                        <a class="nav-item nav-link active" href="#">Nosotros</a>
+                        <a class="nav-item nav-link" href="#">Contacto</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+        <div class="container">
+            <!-----------TITTLE------------>
+            <main class="tab-tittle">
+                <h1 class="tittle">NOSOTROS</h1>
+            </main>
         
-        <div class="mission-vision__container container">
-            <article class="mission-vision column-2">
-                <h3 class="mission-vision__title">Mision</h3>
-                <p>Nuestra mision primordial es que los clientes se retiren con una sonrisa; luego, entregar
-                    sus equipos en perfectas condiciones siempre dentro de las posibilidades, garantizando
-                    el mejor servicio y la mejor atención al público venezolano. Todo ello con un cuerpo de
-                    trabajo altamente capacitado para la tarea, en un ambiente cálido y de interacción
-                    humana aplicando todos los valores para la convivencia.</p>
-                <img src="../images/img-prueba.jpg" alt="">
-            </article>
-            <article class="mission-vision column-2">
-                <h3 class="mission-vision__title">Vision</h3>
-                <p>La visión que temos en Raptor Electronc C.A consiste en ser la empresa #1 en servicios de
-                    reparación de dispositivos móviles en Venezuela, logrando la expansión no solo a nivel nacional,
-                    sino a nivel del continente americano, tanto latinoamericano como norteamericano, siempre
-                    recordando los inicios y como pilar principal buscar la satisfacción por parte de nuestros clientes.</p>
-                <img src="../images/img-prueba.jpg" alt="">
-            </article>
+            <!-----------MISSION AND VISION------------>
+            <div class="mission-vision__container">
+                <article class="mission-vision column-2">
+                    <h3 class="mission-vision__title text-white">Mision</h3>
+                    <p class="text-white">Nuestra mision primordial es que los clientes se retiren con una sonrisa; luego, entregar
+                        sus equipos en perfectas condiciones siempre dentro de las posibilidades, garantizando
+                        el mejor servicio y la mejor atención al público venezolano. Todo ello con un cuerpo de
+                        trabajo altamente capacitado para la tarea, en un ambiente cálido y de interacción
+                        humana aplicando todos los valores para la convivencia.</p>
+                    <img src="../images/us/two.PNG" alt="">
+                </article>
+                <article class="mission-vision column-2">
+                    <h3 class="mission-vision__title text-white">Vision</h3>
+                    <p class="text-white">La visión que temos en Raptor Electronc C.A consiste en ser la empresa #1 en servicios de
+                        reparación de dispositivos móviles en Venezuela, logrando la expansión no solo a nivel nacional,
+                        sino a nivel del continente americano, tanto latinoamericano como norteamericano, siempre
+                        recordando los inicios y como pilar principal buscar la satisfacción por parte de nuestros clientes.</p>
+                    <img src="../images/us/one.PNG" alt="">
+                </article>
+            </div>
         </div>
-        
+    
+        <!-----------BANNER------------>
         <aside class="banner">
             <span class="banner-tittle" >#RaptorElectronic</span>
-            <a href="contact.html"><button class="banner__button btn btn-success" type="button">Ubicanos</button></a>
+            <a href="contact.html"><button class="banner__button btn badge-pill text-white" type="button">Ubicanos</button></a>
         </aside>
     
         <!--<section class="values container">
@@ -84,8 +112,9 @@
             <img src="../images/img-prueba.jpg" alt="" class="values-img">
         </section>-->
     
+        <!-----------VALUES------------>
+        <h3 class="container text-white">Nuestros Valores</h3>
         <ul class="values container">
-            <h3>Nuestros Valores</h3>
             <li class="value">
                 <img src="../images/img-prueba.jpg" alt="" class="value__img">
                 <h5 class="value__tittle">Solidaridad</h5>
@@ -121,8 +150,35 @@
         </ul>
         
     
-        <script src="../js/bootstrap.min.js"></script>
-        <!--<script src="../js/loading-bar.js"></script>-->
+        <!-----------FOOTER------------>
+        <footer class="">
+            <div class="footer-basis-settings d-flex justify-content-around ">
+                <div class=" align-self-center">
+                    <p class="contact-data">Teléfonos:</p>
+                    <p class="contact-data">0412-4370516</p>
+                    <br>
+                    <p class="contact-data">Correo:</p>
+                    <p class="contact-data">raptorelectronic@gmail.com</p>
+                </div>
+            
+                <div class="align-self-center">
+                    <p class="contact-data">Siguienos en:</p>
+                    <a href="#">
+                        <img src="../images/raptor-logo.png" class="logo" alt="raptor electronic logo">
+                    </a>
+                </div>
+            </div>
+        
+            <div class="copy-right-container">
+                <p class="copy-text">
+                    &copy; 2018 Raptor Electronic | Todos los derchos reservados.
+                </p>
+            </div>
+        </footer>
+        
+    
+        <script src="../css/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../css/bootstrap/js/bootstrap.js"></script>
 
     </body>
 </html>

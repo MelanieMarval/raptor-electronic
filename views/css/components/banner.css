@@ -1,13 +1,13 @@
 .banner{
     width: 100%;
     height: 100px;
-    background-color: #0062cc;
+    background-color: var(--blue-light-raptor);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
     padding-right: 5em;
-    margin: var(--gutter) 0;
+    margin: 2.5em 0;
 }
 
 .banner-tittle{
@@ -18,5 +18,6 @@
 
 .banner__button{
     margin-right: 32px;
-    background-color: #1e7e34;
+    background-color: var(--dark-light-raptor);
+
 }
