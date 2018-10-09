@@ -15,10 +15,10 @@
 
 .service-addtional {
     display: flex;
-    border: 5px solid var(--green-dark-raptor);
     padding: 5px;
     margin: 10px;
     width: 31em;
+    border: 5px solid var(--green-dark-raptor);
     background-color: var(--green-light-raptor);
 }
 
