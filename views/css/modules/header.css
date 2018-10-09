@@ -3,10 +3,10 @@
     font-size: 18px;
     height: 80px;
 
-    background-color:  var(--dark-raptor);
+    background-color:  var(--dark);
 }
 
 .logo {
-    height: 95px;
-    margin-top: 7px;
+    height: 90px;
+    margin-top: 8px;
 }

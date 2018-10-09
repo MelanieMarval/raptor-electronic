@@ -1,16 +1,27 @@
 :root{
-    --dark-raptor:  #252a30;
-    --dark-light-raptor: #363c42;
-    --blue-dark-raptor: #375688;
-    --blue-light-raptor:  #119ac7;
-    --green-dark-raptor:   #379068;
-    --green-light-raptor:   #60ba80;
+    --dark:  #252a30;
+    --dark-light: #363c42;
+    --blue-dark: #375688;
+    --blue-light:  #119ac7;
+    --green-dark:   #379068;
+    --green-light:   #60ba80;
 }
 
 body {
-    background-color:  var(--blue-dark-raptor);
+    background-color:  var(--blue-dark);
 }
 
+                /*SET MAIN TITLES*/
+.main-title {
+    padding-top: 150px;
+
+    color: white;
+    text-align: center;
+}
+
+.--main-title {
+    padding-top: 20px;
+}
 
 
 

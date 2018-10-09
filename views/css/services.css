@@ -1,0 +1,46 @@
+.services-container {
+    height: 100%;
+    margin: 0;
+    padding-bottom: 150px;
+
+    overflow: hidden;
+}
+
+.description-container {
+    height: auto;
+    margin-top: 50px;
+    padding: 0 100px 0 100px;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.tec-service-img {
+    height: 430px;
+    margin: 50px;
+}
+
+.tec-service-description {
+    height: 430px;
+    margin: 50px;
+
+    justify-content: center;
+}
+
+.tec-service-icons {
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 412px) {
+    .description-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tec-service-img {
+        height: 400px;
+        margin: 0;
+    }
+}

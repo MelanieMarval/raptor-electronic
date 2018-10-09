@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
         <meta charset="UTF-8">
         <title>Raptor Electronic | productos</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/base.css">
-        <link rel="stylesheet" href="../css/products.css">
         <link rel="stylesheet" href="../css/modules/header.css">
+        <link rel="stylesheet" href="../css/products.css">
         <link rel="stylesheet" href="../css/modules/footer.css">
         <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="../css/base.css">
     </head>
     
     <body>
@@ -16,7 +17,7 @@
         <!-----------NAVBAR------------>
         <header class="fixed-top">
             <nav class="navbar navbar-expand-lg navbar-dark nav-basis-settings">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="products.html">
                     <img src="../images/raptor-logo.png" class="logo" alt="raptor electronic logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -26,8 +27,8 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">Productos <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#">Servicios</a>
+                        <a class="nav-item nav-link active" href="products.html">Productos <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="services.html">Servicios</a>
                         <a class="nav-item nav-link" href="#">Estado de Servicio</a>
                         <a class="nav-item nav-link" href="#">Nosotros</a>
                         <a class="nav-item nav-link" href="#">Contacto</a>
@@ -37,23 +38,21 @@
         </header>
     
         <div class="products-container">
+            <!-----------SEARCH------------>
+            <div class="search-container">
+                <input class="search-field text-white" placeholder="Buscar">
+                <img src="../images/search-tool.svg" class="search-icon" alt="">
+            </div>
+    
+            <h1 class="display-4 main-title --main-title">Productos</h1>
             
             <!-----------NAV PRODUCTS------------>
             <div class="container m-auto">
-                <h1 class="display-4 main-title">Productos</h1>
-                
-                <div class="container d-flex flex-column">
                     <div class="m-auto products-nav-c">
                         <a class="nav-item nav-link products-nav-link " href="">Accesorios</a>
                         <a class="nav-item nav-link products-nav-link active active-link" href="">Dispositivos</a>
                         <a class="nav-item nav-link products-nav-link " href="">Refacciones</a>
                     </div>
-        
-                    <div class="search-container">
-                        <input class="search-field">
-                        <img src="../images/search-tool.svg" class="search-icon" alt="">
-                    </div>
-                </div>
             </div>
             
             <!-----------PRODUCT CARDS------------>
@@ -142,8 +141,8 @@
                 
                 <div class="align-self-center">
                     <p class="contact-data">Siguienos en:</p>
-                    <a href="#">
-                        <img src="../images/raptor-logo.png" class="logo" alt="raptor electronic logo">
+                    <a class="d-flex justify-content-center" href="https://www.instagram.com/raptorelectronic/" target="_blank">
+                        <img src="../images/instagram.svg" class="logo" alt="raptor electronic logo">
                     </a>
                 </div>
             </div>
