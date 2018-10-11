@@ -5,9 +5,9 @@
         <meta charset="UTF-8">
         <title>Raptor Electronic | productos</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/modules/header.css">
+        <link rel="stylesheet" href="../css/components/header.css">
         <link rel="stylesheet" href="../css/products.css">
-        <link rel="stylesheet" href="../css/modules/footer.css">
+        <link rel="stylesheet" href="../css/components/footer.css">
         <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
         <link rel="stylesheet" href="../css/base.css">
     </head>
@@ -15,7 +15,7 @@
     <body>
     
         <!-----------NAVBAR------------>
-        <header class="fixed-top">
+        <header class="fixed-top shadow-lg">
             <nav class="navbar navbar-expand-lg navbar-dark nav-basis-settings">
                 <a class="navbar-brand" href="products.html">
                     <img src="../images/raptor-logo.png" class="logo" alt="raptor electronic logo">
@@ -29,22 +29,20 @@
                     <div class="navbar-nav">
                         <a class="nav-item nav-link active" href="products.html">Productos <span class="sr-only">(current)</span></a>
                         <a class="nav-item nav-link" href="services.html">Servicios</a>
-                        <a class="nav-item nav-link" href="#">Estado de Servicio</a>
-                        <a class="nav-item nav-link" href="#">Nosotros</a>
-                        <a class="nav-item nav-link" href="#">Contacto</a>
+                        <a class="nav-item nav-link" href="status-of-services.html">Estado de Servicio</a>
+                        <a class="nav-item nav-link" href="us.html">Nosotros</a>
+                        <a class="nav-item nav-link" href="contact.html">Contacto</a>
                     </div>
                 </div>
             </nav>
         </header>
     
         <div class="products-container">
-            <!-----------SEARCH------------>
-            <div class="search-container">
-                <input class="search-field text-white" placeholder="Buscar">
-                <img src="../images/search-tool.svg" class="search-icon" alt="">
-            </div>
+            
     
-            <h1 class="display-4 main-title --main-title">Productos</h1>
+            <div class="container div-title ">
+                <h1 class="title">Productos</h1>
+            </div>
             
             <!-----------NAV PRODUCTS------------>
             <div class="container m-auto">
@@ -54,56 +52,57 @@
                         <a class="nav-item nav-link products-nav-link " href="">Refacciones</a>
                     </div>
             </div>
-            
+            <!-----------SEARCH------------>
+            <div class="search-container">
+                <input class="search-field" placeholder="Buscar">
+                <img src="../images/search-tool.svg" class="search-icon" alt="">
+            </div>
             <!-----------PRODUCT CARDS------------>
-            <div class="container m-auto" style="padding: 0 2.5% 0 3.5%">
-                <div class="card-columns " style="padding: 0">
-                    <div class="container ">
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" height="285" src="../images/products/xiaomi-redmi.jpg" alt="Card image cap">
+            <div class="container card-columns d-flex justify-content-between flex-wrap">
+                        <div class="card shadow-sm" style="width: 18rem;">
+                            <img class="card-img-top img-fluid" height="285" src="../images/products/xiaomi-redmi.jpg" alt="Card image cap">
                             <div class="card-body card-body-product">
                                 <h5 class="card-title">Xiaomi Redmin</h5>
                                 <p class="card-text">BsS 125.000.00</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" height="285" src="../images/products/huawei-yt-lite.jpg" alt="Card image cap">
+                        <div class="card shadow-sm" style="width: 18rem;">
+                            <img class="card-img-top img-fluid" height="285" src="../images/products/huawei-yt-lite.jpg" alt="Card image cap">
                             <div class="card-body  card-body-product">
                                 <h5 class="card-title">Huawei YT Lite</h5>
                                 <p class="card-text">BsS 125.000.00</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" height="285" src="../images/products/xr5.jpg" alt="Card image cap">
+                        <div class="card shadow-sm" style="width: 18rem;">
+                            <img class="card-img-top img-fluid" height="285" src="../images/products/xr5.jpg" alt="Card image cap">
                             <div class="card-body card-body-product">
                                 <h5 class="card-title">Xiaomi XR5</h5>
                                 <p class="card-text">BsS 125.000.00</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" height="285" src="../images/products/alcatel-a30.jpg" alt="Card image cap">
+                        <div class="card shadow-sm" style="width: 18rem;">
+                            <img class="card-img-top img-fluid" height="285" src="../images/products/alcatel-a30.jpg" alt="Card image cap">
                             <div class="card-body card-body-product">
                                 <h5 class="card-title">Card title</h5>
                                 <p class="card-text">BsS 125.000.00</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" height="285" src="../images/products/leeco-le-s3.jpg" alt="Card image cap">
+                        <div class="card shadow-sm" style="width: 18rem;">
+                            <img class="card-img-top img-fluid" height="285" src="../images/products/leeco-le-s3.jpg" alt="Card image cap">
                             <div class="card-body card-body-product">
                                 <h5 class="card-title">Leeco Le S3</h5>
                                 <p class="card-text">BsS 125.000.00</p>
                             </div>
                         </div>
-                        <div class="card" style="width: 18rem;">
-                            <img class="card-img-top" height="285" src="../images/products/huawei-mate-9.jpg" alt="Card image cap">
+                        <div class="card shadow-sm" style="width: 18rem;">
+                            <img class="card-img-top img-fluid" height="285" src="../images/products/huawei-mate-9.jpg" alt="Card image cap">
                             <div class="card-body card-body-product">
                                 <h5 class="card-title">Huawei Mate 9</h5>
                                 <p class="card-text">BsS 125.000.00</p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+             
     
             <!-----------PRODUCTS PAGINATION------------>
             <nav aria-label="..." class="d-flex justify-content-center products-pagination">
@@ -119,7 +118,7 @@
             <!-----------GUARANTEE MESSAGE------------>
             <div class="jumbotron jumbotron-fluid">
                 <div class="container text-center">
-                    <p class="lead">
+                    <p class="lead text-white">
                         Todos nuestros productos tienen grantía de 7
                         dias hábiles a partir de la fecha de compra.
                     </p>
@@ -140,9 +139,9 @@
                 </div>
                 
                 <div class="align-self-center">
-                    <p class="contact-data">Siguienos en:</p>
+                    <p class="contact-data">Siguenos en:</p>
                     <a class="d-flex justify-content-center" href="https://www.instagram.com/raptorelectronic/" target="_blank">
-                        <img src="../images/instagram.svg" class="logo" alt="raptor electronic logo">
+                        <img src="../images/instagram.svg" class="social-icon" alt="raptor electronic logo">
                     </a>
                 </div>
             </div>

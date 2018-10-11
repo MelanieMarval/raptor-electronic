@@ -3,16 +3,41 @@
     <head>
         <meta charset="UTF-8">
         <title>Raptor Electronic - Contacto</title>
-        <link rel="stylesheet" href="../css/bootstrap.css">
-        <link rel="stylesheet" href="../css/base.css">
         <link rel="stylesheet" href="../css/components/banner.css">
-        <link rel="stylesheet" href="../css/components/tab-tittle.css">
+        <link rel="stylesheet" href="../css/components/header.css">
         <link rel="stylesheet" href="../css/contacts.css">
-        <link rel="stylesheet" href="../css/layout/columns-divide.css">
+        <link rel="stylesheet" href="../css/components/footer.css">
+        <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="../css/base.css">
     </head>
     <body>
-        <main class="tab-tittle">
-            <h1 class="tittle">CONTACTO</h1>
+    
+        <!-----------NAVBAR------------>
+        <header class="fixed-top shadow-lg">
+            <nav class="navbar navbar-expand-lg navbar-dark nav-basis-settings">
+                <a class="navbar-brand" href="products.html">
+                    <img src="../images/raptor-logo.png" class="logo" alt="raptor electronic logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link " href="products.html">Productos <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="services.html">Servicios</a>
+                        <a class="nav-item nav-link" href="status-of-services.html">Estado de Servicio</a>
+                        <a class="nav-item nav-link " href="us.html">Nosotros</a>
+                        <a class="nav-item nav-link active" href="contact.html">Contacto</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        
+        <main class="container div-title">
+            <h1 class="title">CONTACTO</h1>
         </main>
         
         <div class="contacts-container container">
@@ -33,6 +58,33 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15704.934216727275!2d-68.0122184!3d10.2427382!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6eae34f25ced6639!2sReparaci%C3%B3n+de+Celulares+Raptor+Electronic!5e0!3m2!1ses-419!2sve!4v1538790536061"
                     width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
+    
+    
+        <!-----------FOOTER------------>
+        <footer class="">
+            <div class="footer-basis-settings d-flex justify-content-around ">
+                <div class=" align-self-center">
+                    <p class="contact-data">Teléfonos:</p>
+                    <p class="contact-data">0412-4370516</p>
+                    <br>
+                    <p class="contact-data">Correo:</p>
+                    <p class="contact-data">raptorelectronic@gmail.com</p>
+                </div>
+            
+                <div class="align-self-center">
+                    <p class="contact-data">Siguenos en:</p>
+                    <a class="d-flex justify-content-center" href="https://www.instagram.com/raptorelectronic/" target="_blank">
+                        <img src="../images/instagram.svg" class="social-icon" alt="raptor electronic logo">
+                    </a>
+                </div>
+            </div>
+        
+            <div class="copy-right-container">
+                <p class="copy-text">
+                    &copy; 2018 Raptor Electronic | Todos los derchos reservados.
+                </p>
+            </div>
+        </footer>
         
     </body>
 </html>

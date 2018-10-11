@@ -7,6 +7,11 @@
     background-color:  var(--dark);
 }
 
+.social-icon {
+    height: 80px;
+    margin-top: 8px;
+}
+
 .copy-right-container {
     width: 100%;
     text-align: center;
@@ -23,3 +28,4 @@
     margin: 0;
     color: white;
 }
+

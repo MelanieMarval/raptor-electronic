@@ -1,0 +1,14 @@
+.access-button {
+    height: 40px;
+    background-color: var(--green-dark);
+    color: white;
+}
+
+
+.add-button{
+    height: 22px;
+
+    background-color: var(--jumbo-light);
+    color: var(--blue-dark);
+    cursor: pointer;
+}

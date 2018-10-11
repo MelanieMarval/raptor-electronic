@@ -1,0 +1,88 @@
+
+
+.form-field {
+    margin-bottom: 50px;
+    border: none;
+    border-bottom: 1px solid var(--blue-dark);
+
+    background-color: var(--jumbo-light);
+    color: var(--blue-dark);
+    outline: none;
+
+    display: flex;
+}
+
+.form-field:focus {
+    margin-top: -1px;
+    border: none;
+    border-bottom: 2px solid var(--blue-dark);
+
+    background-color: var(--jumbo-light);
+    color: var(--blue-dark);
+    outline: none;
+
+    display: flex;
+}
+
+.--form-field-modal {
+    background-color: white;
+}
+
+.--form-field-modal:focus {
+    margin-top: -1px;
+    background-color: white;
+}
+
+.--modal-prod-name-field {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    border: none;
+    border-bottom: 1px solid var(--blue-dark);
+
+    background-color: white;
+    color: var(--blue-dark);
+    outline: none;
+}
+
+.--modal-prod-name-field:focus {
+    background-color: white;
+    border-bottom: 2px solid var(--blue-dark);
+}
+
+.search-container {
+    margin-bottom: 50px;
+    margin-right: 8%;
+    margin-left: 8%;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-field {
+    margin-right: 5px;
+    border: none;
+    border-bottom: 1px solid var(--blue-dark);
+
+    background-color: var(--jumbo-light);
+    color: var(--blue-dark);
+    outline: none;
+    direction: rtl;
+}
+
+.search-field:focus {
+    border: none;
+    margin-top: -1px;
+    border-bottom: 2px solid var(--blue-dark);
+
+    background-color: var(--jumbo-light);
+    color: var(--blue-dark);
+    outline: none;
+
+    display: flex;
+}
+
+.search-field::placeholder {
+    color: #406da8;
+}

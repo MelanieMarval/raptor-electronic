@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Raptor Electronic | services</title>
+        <link rel="stylesheet" href="../css/components/header.css">
+        <link rel="stylesheet" href="../css/components/form-fields.css">
+        <link rel="stylesheet" href="../css/services.css">
+        <link rel="stylesheet" href="../css/components/modals.css">
+        <link rel="stylesheet" href="../css/components/buttons.css">
+        <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="../css/base.css">
+    </head>
+    <body>
+    
+        <!-----------ADMIN NAVBAR------------>
+        <header class="fixed-top shadow-lg">
+            <nav class="navbar navbar-expand-lg navbar-dark nav-basis-settings">
+                <a class="navbar-brand d-flex align-items-center" href="products.html">
+                    <img src="../images/admin-pic.jpg" class="circle-image" alt="">
+                    <div class="profile-div">
+                        <p class="admin">Administrador</p>
+                        <p class="admin-name">Jon Mircha</p>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-dark justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="products.html">Productos <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link active" href="services.html">Servicios</a>
+                        <a class="nav-item nav-link" href="status-of-services.html">Estado de Servicio</a>
+                        <a class="nav-item nav-link" href="admin.html">Administradores</a>
+                        <a class="svg-logout-div" href="../../index.html" data-toggle="tooltip" data-placement="bottom" title="Salir" >
+                            <img src="../images/logout.svg" class="svg-logout ">
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    
+        <div class="container div-title">
+            <h1 class="title">Servicios</h1>
+        </div>
+        <div class="container">
+            <button class="add-button  ml-3 mb-4" data-toggle="modal" data-target="#addServiceModal">
+                Agregar
+                <img src="../images/products/add.svg" class="add-button" alt="">
+            </button>
+        </div>
+        
+        <!-----------ADMIN SERVICE CARDS------------>
+       
+      
+            <div class=" container card-columns d-flex justify-content-between flex-wrap">
+                <div class="card shadow-sm" style="width: 14rem; height: 24em">
+                    <div class="d-flex justify-content-end">
+                        <a href="#" data-toggle="modal" data-target="#addServiceModal">
+                            <img class="mr-1" height="16px" src="../images/edit.svg">
+                        </a>
+                        <a href="#" data-toggle="modal" data-target="#deleteServiceModal">
+                            <img class="mr-1" height="16px" src="../images/delete.svg">
+                        </a>
+                    </div>
+                    <img class="card-img-top img-fluid" height="285" src="../images/products/xiaomi-redmi.jpg" alt="Card image cap">
+                    <div class="card-body card-body-product text-center">
+                        <h5 class="card-title">Servicio técnico en reparación</h5>
+                        <p class="card-text">BsS 125.000.00</p>
+                    </div>
+                </div>
+                <div class="card shadow-sm" style="width: 14rem; height: 24em">
+                    <div class="d-flex justify-content-end text-center">
+                        <a href="#" data-toggle="modal" data-target="#addServiceModal">
+                            <img class="mr-1" height="16px" src="../images/edit.svg">
+                        </a>
+                        <a href="#" data-toggle="modal" data-target="#deleteServiceModal">
+                            <img class="mr-1" height="16px" src="../images/delete.svg">
+                        </a>
+                    </div>
+                    <img class="card-img-top img-fluid" height="285" src="../images/products/xiaomi-redmi.jpg" alt="Card image cap">
+                    <div class="card-body card-body-product text-center">
+                        <h5 class="card-title">Revisión</h5>
+                        <p class="card-text">BsS 125.000.00</p>
+                    </div>
+                </div>
+                <div class="card shadow-sm" style="width: 14rem; height: 24em">
+                    <div class="d-flex justify-content-end">
+                        <a href="#" data-toggle="modal" data-target="#addServiceModal">
+                            <img class="mr-1" height="16px" src="../images/edit.svg">
+                        </a>
+                        <a href="#" data-toggle="modal" data-target="#deleteServiceModal">
+                            <img class="mr-1" height="16px" src="../images/delete.svg">
+                        </a>
+                    </div>
+                    <img class="card-img-top img-fluid" height="285" src="../images/products/xiaomi-redmi.jpg" alt="Card image cap">
+                    <div class="card-body card-body-product text-center">
+                        <h5 class="card-title">Desbloqueo</h5>
+                        <p class="card-text">BsS 125.000.00</p>
+                    </div>
+                </div>
+                <div class="card  shadow-sm" style="width: 14rem; height: 24em">
+                    <div class="d-flex justify-content-end ">
+                        <a href="#" data-toggle="modal" data-target="#addServiceModal">
+                            <img class="mr-1" height="16px" src="../images/edit.svg">
+                        </a>
+                        <a href="#" data-toggle="modal" data-target="#deleteServiceModal">
+                            <img class="mr-1" height="16px" src="../images/delete.svg">
+                        </a>
+                    </div>
+                    <img class="card-img-top img-fluid" height="285" src="../images/products/xiaomi-redmi.jpg" alt="Card image cap">
+                    <div class="card-body card-body-product text-center">
+                        <h5 class="card-title">Root</h5>
+                        <p class="card-text">BsS 125.000.00</p>
+                    </div>
+                </div>
+                <div class="card  shadow-sm" style="width: 14rem; height: 24em">
+                    <div class="d-flex justify-content-end ">
+                        <a href="#" data-toggle="modal" data-target="#addServiceModal">
+                            <img class="mr-1" height="16px" src="../images/edit.svg">
+                        </a>
+                        <a href="#" data-toggle="modal" data-target="#deleteServiceModal">
+                            <img class="mr-1" height="16px" src="../images/delete.svg">
+                        </a>
+                    </div>
+                    <img class="card-img-top img-fluid" height="285" src="../images/products/xiaomi-redmi.jpg" alt="Card image cap">
+                    <div class="card-body card-body-product text-center">
+                        <h5 class="card-title">Root</h5>
+                        <p class="card-text">BsS 125.000.00</p>
+                    </div>
+                </div>
+            </div>
+     
+
+    
+        <!------ADD SERVICE MODAL------->
+        <div class="modal fade" id="addServiceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Agregar servicio</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body d-flex flex-column">
+                        <input type="file" id="openFile" style="display: none">
+                        <a href="#" class="m-auto" style="width: 390px"  onclick="chooseProduct();return">
+                            <img class="card-img-top" style="background-color: #8698B7" height="200" src="../images/bg-for-photo.svg" alt="Card image cap">
+                        </a>
+                        <div class="m-5 d-flex flex-column">
+                            <input type="text" class="form-field --form-field-modal" placeholder="Nombre del servicio" >
+                            <input type="text" class="form-field --form-field-modal" placeholder="Precio">
+                            <textarea class="modal-textarea" placeholder="Descripción del Servicio"></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- DELETE MODAL -->
+        <div class="modal fade" id="deleteServiceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="">Eliminar</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ¿Esta seguro que desea eliminar este servicio?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-danger">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            function chooseProduct() {
+                console.log('bien');
+                document.getElementById("openFile").click();
+            }
+        </script>
+    
+        <script src="../css/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../css/bootstrap/js/bootstrap.js"></script>
+        
+    </body>
+</html>

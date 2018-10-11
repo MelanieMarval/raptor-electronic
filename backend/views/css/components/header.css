@@ -1,0 +1,41 @@
+
+.nav-basis-settings {
+    font-size: 18px;
+    height: 80px;
+
+    background-color:  var(--dark);
+}
+
+.circle-image {
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    border: 3px solid white;
+    margin-right: 1em;
+}
+
+.svg-logout-div {
+    margin-left: 10px;
+    display: flex;
+    align-self: center;
+}
+
+.svg-logout {
+    height: 23px;
+}
+
+.profile-div {
+    display: inline-block;
+    text-align: center;
+}
+
+
+.admin {
+    margin: 0;
+}
+
+.admin-name {
+    display: block;
+    margin: 0;
+    font-size: 12px;
+}

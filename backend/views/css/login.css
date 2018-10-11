@@ -1,0 +1,29 @@
+.--body-login {
+    background-color:  var(--blue-dark);
+    overflow: hidden;
+}
+
+.login-container {
+    height: auto;
+    width: 400px;
+    margin: 50px auto;
+    padding: 50px 50px;
+
+
+    background-color:  var(--jumbo-light);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.svg-raptor {
+    height: 100px;
+    margin-left: 20px;
+}
+
+.svg-login {
+    height: 90px;
+    margin-bottom: 20px;
+}
+

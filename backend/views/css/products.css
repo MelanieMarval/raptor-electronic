@@ -30,33 +30,10 @@
     color: var(--blue-dark);
 }
 
-.search-container {
-    margin-bottom: 50px;
-    margin-right: 8%;
-    color: white;
-
-    display: flex;
-    justify-content: flex-end;
-}
-
-.search-field {
-    margin-right: 5px;
-    border: none;
-    border-bottom: 1px solid var(--blue-dark);
-
-    background-color: var(--jumbo-light);
-    color: var(--blue-dark);
-    outline: none;
-    direction: rtl;
-}
-
-.search-field::placeholder {
-    color: #406da8;
-}
-
 .search-icon {
     height: 22px;
 }
+
 
                             /*PRODUCT CARDS*/
 .card-body-product {
@@ -65,6 +42,6 @@
 }
 
 .products-pagination {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 

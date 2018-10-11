@@ -1,0 +1,30 @@
+
+.upload-prod-btn {
+    height: 200px;
+    margin: 0 40px;
+    background-color: #8698B7
+}
+
+.--modal-body {
+    margin: 80px;
+}
+
+.modal-bg {
+    height: 100px;
+}
+
+.modal-textarea {
+    margin: 10px 0;
+    border: 1px solid var(--blue-dark);
+    color: #999999;
+    resize: none;
+}
+
+
+.modal-textarea:focus {
+    border: 2px solid var(--blue-dark);
+}
+
+.--modal-textarea-prod {
+    margin: 10px 40px;
+}

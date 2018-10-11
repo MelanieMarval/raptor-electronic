@@ -3,9 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <title>Raptor Electronic | Estado de Servicios</title>
-        <link rel="stylesheet" href="../css/status-of-services.css">
-        <link rel="stylesheet" href="../css/components/tab-tittle.css">
         <link rel="stylesheet" href="../css/components/header.css">
+        <link rel="stylesheet" href="../css/status-of-services.css">
         <link rel="stylesheet" href="../css/components/footer.css">
         <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
         <link rel="stylesheet" href="../css/base.css">
@@ -13,9 +12,9 @@
     <body>
     
         <!-----------NAVBAR------------>
-        <header class="fixed-top">
+        <header class="fixed-top shadow-lg">
             <nav class="navbar navbar-expand-lg navbar-dark nav-basis-settings">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="products.html">
                     <img src="../images/raptor-logo.png" class="logo" alt="raptor electronic logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -25,11 +24,11 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="#">Productos <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#">Servicios</a>
-                        <a class="nav-item nav-link active" href="#">Estado de Servicio</a>
-                        <a class="nav-item nav-link" href="#">Nosotros</a>
-                        <a class="nav-item nav-link" href="#">Contacto</a>
+                        <a class="nav-item nav-link " href="products.html">Productos <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="services.html">Servicios</a>
+                        <a class="nav-item nav-link active" href="status-of-services.html">Estado de Servicio</a>
+                        <a class="nav-item nav-link" href="us.html">Nosotros</a>
+                        <a class="nav-item nav-link" href="contact.html">Contacto</a>
                     </div>
                 </div>
             </nav>
@@ -37,15 +36,15 @@
     
         
         <div class="status-of-services__container container">
-            <!-----------TITTLE------------>
-            <main class="tab-tittle">
-                <h1 class="tittle">ESTADO DE SERVICIOS</h1>
+            <!-----------TITLE------------>
+            <main class="div-title">
+                <h1 class="title">ESTADO DE SERVICIOS</h1>
             </main>
             
             <!-----------STATUS OF SERVICES------------>
             <article class="status-information">
-                <h3 class="text-center text-white">Consulta el estado de tu servicio aquí.</h3>
-                <p class="text-center text-white">Al dejar su dispositivo con nosotros le proporcionamos de un codigo unico, el cual
+                <h3 class="text-center ">Consulta el estado de tu servicio aquí.</h3>
+                <p class="text-center ">Al dejar su dispositivo con nosotros le proporcionamos de un codigo unico, el cual
                     puede introducir a continuacion y asi conocer el estado actual de su o sus
                     equipos ya sea "En proceso" o "Finalizado" junto con su fecha. <br>De esta forma podra
                     conocer si puede retirarlo o es necesario esperar un poco mas.</p>
@@ -57,7 +56,27 @@
                 <div class="search-code column-2">
                     <h3 class="search-code__tittle">Ingrese aquí su código</h3>
                     <input type="search" class="form-control search-code__input" placeholder= "Ej: 35689" style="width: 20rem">
-                    <button type="submit" class="search-code__button btn btn-success badge-pill">Buscar</button>
+                    <button type="submit" data-toggle="modal" data-target="#modalServiceCode" class="search-code__button btn  badge-pill">Buscar</button>
+    
+                    <!-- Modal -->
+                    <div class="modal fade" id="modalServiceCode" tabindex="-1" role="dialog" aria-labelledby="modalServiceCode" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modalServiceCodeTitle">Estado de Servicio</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    El servicio de su equipo se encuentra en proceso <br>Esta previsto para 15-04-2019
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </article>
     
@@ -114,9 +133,9 @@
                 </div>
             
                 <div class="align-self-center">
-                    <p class="contact-data">Siguienos en:</p>
-                    <a href="#">
-                        <img src="../images/raptor-logo.png" class="logo" alt="raptor electronic logo">
+                    <p class="contact-data">Siguenos en:</p>
+                    <a class="d-flex justify-content-center" href="https://www.instagram.com/raptorelectronic/" target="_blank">
+                        <img src="../images/instagram.svg" class="social-icon" alt="raptor electronic logo">
                     </a>
                 </div>
             </div>
