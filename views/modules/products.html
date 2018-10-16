@@ -15,42 +15,49 @@
     <body>
     
         <!-----------NAVBAR------------>
-        <header class="fixed-top shadow-lg">
-            <nav class="navbar navbar-expand-lg navbar-dark nav-basis-settings">
-                <a class="navbar-brand" href="products.html">
-                    <img src="../images/raptor-logo.png" class="logo" alt="raptor electronic logo">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="" href="../../index.html">
+                    <img src="../images/raptor-logo.png" class="logo" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="products.html">Productos <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="services.html">Servicios</a>
-                        <a class="nav-item nav-link" href="status-of-services.html">Estado de Servicio</a>
-                        <a class="nav-item nav-link" href="us.html">Nosotros</a>
-                        <a class="nav-item nav-link" href="contact.html">Contacto</a>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-item nav-link" href="products.html">Productos <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="services.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="status-of-services.html">Estado de Servicio</a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-item nav-link" href="us.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-item nav-link" href="contact.html">Contacto</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
     
-        <div class="products-container">
+        <div class="products-container container m-auto">
             
-    
-            <div class="container div-title ">
+            <div class="div-title ">
                 <h1 class="title">Productos</h1>
             </div>
             
             <!-----------NAV PRODUCTS------------>
             <div class="container m-auto">
-                    <div class="m-auto products-nav-c">
-                        <a class="nav-item nav-link products-nav-link " href="">Accesorios</a>
-                        <a class="nav-item nav-link products-nav-link active active-link" href="">Dispositivos</a>
-                        <a class="nav-item nav-link products-nav-link " href="">Refacciones</a>
-                    </div>
+                <div class="m-auto products-nav-c">
+                    <a class="nav-item nav-link products-nav-link " href="">Accesorios</a>
+                    <a class="nav-item nav-link products-nav-link active active-link" href="">Dispositivos</a>
+                    <a class="nav-item nav-link products-nav-link " href="">Refacciones</a>
+                </div>
             </div>
             <!-----------SEARCH------------>
             <div class="search-container">
@@ -59,49 +66,49 @@
             </div>
             <!-----------PRODUCT CARDS------------>
             <div class="container card-columns d-flex justify-content-between flex-wrap">
-                        <div class="card shadow-sm" style="width: 18rem;">
-                            <img class="card-img-top img-fluid" height="285" src="../images/products/xiaomi-redmi.jpg" alt="Card image cap">
-                            <div class="card-body card-body-product">
-                                <h5 class="card-title">Xiaomi Redmin</h5>
-                                <p class="card-text">BsS 125.000.00</p>
-                            </div>
-                        </div>
-                        <div class="card shadow-sm" style="width: 18rem;">
-                            <img class="card-img-top img-fluid" height="285" src="../images/products/huawei-yt-lite.jpg" alt="Card image cap">
-                            <div class="card-body  card-body-product">
-                                <h5 class="card-title">Huawei YT Lite</h5>
-                                <p class="card-text">BsS 125.000.00</p>
-                            </div>
-                        </div>
-                        <div class="card shadow-sm" style="width: 18rem;">
-                            <img class="card-img-top img-fluid" height="285" src="../images/products/xr5.jpg" alt="Card image cap">
-                            <div class="card-body card-body-product">
-                                <h5 class="card-title">Xiaomi XR5</h5>
-                                <p class="card-text">BsS 125.000.00</p>
-                            </div>
-                        </div>
-                        <div class="card shadow-sm" style="width: 18rem;">
-                            <img class="card-img-top img-fluid" height="285" src="../images/products/alcatel-a30.jpg" alt="Card image cap">
-                            <div class="card-body card-body-product">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text">BsS 125.000.00</p>
-                            </div>
-                        </div>
-                        <div class="card shadow-sm" style="width: 18rem;">
-                            <img class="card-img-top img-fluid" height="285" src="../images/products/leeco-le-s3.jpg" alt="Card image cap">
-                            <div class="card-body card-body-product">
-                                <h5 class="card-title">Leeco Le S3</h5>
-                                <p class="card-text">BsS 125.000.00</p>
-                            </div>
-                        </div>
-                        <div class="card shadow-sm" style="width: 18rem;">
-                            <img class="card-img-top img-fluid" height="285" src="../images/products/huawei-mate-9.jpg" alt="Card image cap">
-                            <div class="card-body card-body-product">
-                                <h5 class="card-title">Huawei Mate 9</h5>
-                                <p class="card-text">BsS 125.000.00</p>
-                            </div>
-                        </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" height="285" src="../images/products/xiaomi-redmi.jpg" alt="Card image cap">
+                    <div class="card-body card-body-product">
+                        <h5 class="card-title">Xiaomi Redmin</h5>
+                        <p class="card-text">BsS 125.000.00</p>
                     </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" height="285" src="../images/products/huawei-yt-lite.jpg" alt="Card image cap">
+                    <div class="card-body  card-body-product">
+                        <h5 class="card-title">Huawei YT Lite</h5>
+                        <p class="card-text">BsS 125.000.00</p>
+                    </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" height="285" src="../images/products/xr5.jpg" alt="Card image cap">
+                    <div class="card-body card-body-product">
+                        <h5 class="card-title">Xiaomi XR5</h5>
+                        <p class="card-text">BsS 125.000.00</p>
+                    </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" height="285" src="../images/products/alcatel-a30.jpg" alt="Card image cap">
+                    <div class="card-body card-body-product">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">BsS 125.000.00</p>
+                    </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" height="285" src="../images/products/leeco-le-s3.jpg" alt="Card image cap">
+                    <div class="card-body card-body-product">
+                        <h5 class="card-title">Leeco Le S3</h5>
+                        <p class="card-text">BsS 125.000.00</p>
+                    </div>
+                </div>
+                <div class="card shadow-sm" style="width: 18rem;">
+                    <img class="card-img-top img-fluid" height="285" src="../images/products/huawei-mate-9.jpg" alt="Card image cap">
+                    <div class="card-body card-body-product">
+                        <h5 class="card-title">Huawei Mate 9</h5>
+                        <p class="card-text">BsS 125.000.00</p>
+                    </div>
+                </div>
+            </div>
              
     
             <!-----------PRODUCTS PAGINATION------------>
@@ -153,7 +160,6 @@
             </div>
         </footer>
       
-        
         
         <script src="../css/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
         <script src="../css/bootstrap/js/bootstrap.js"></script>

@@ -68,3 +68,14 @@
     margin-bottom: 40px;
 }
 
+@media screen and (max-width: 500px){
+    .products-nav-c {
+        width: 110px;
+        margin: auto;
+        text-align: center;
+    }
+    .products-nav-c {
+        margin: auto;
+        flex-direction: column;
+    }
+}

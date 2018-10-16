@@ -1,22 +1,15 @@
 
-.nav-basis-settings {
-    font-size: 18px;
-    height: 80px;
-
-    background-color:  var(--dark);
-}
-
 .circle-image {
-    width: 3em;
-    height: 3em;
+    width: 4em;
+    height: 4em;
     border-radius: 100%;
     border: 3px solid white;
     margin-right: 1em;
 }
 
 .svg-logout-div {
-    margin-left: 10px;
-    display: flex;
+    /*margin-top: 10px;*/
+    /*margin-left: 9px;*/
     align-self: center;
 }
 
@@ -29,12 +22,14 @@
     text-align: center;
 }
 
-
 .admin {
     margin: 0;
+    color: white;
 }
 
 .admin-name {
+    color: white;
+
     display: block;
     margin: 0;
     font-size: 12px;

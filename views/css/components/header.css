@@ -1,12 +1,18 @@
 
-.nav-basis-settings {
-    font-size: 18px;
+.logo {
+    margin: 0;
+    padding-top: 5px;
     height: 80px;
-
-    background-color:  var(--dark);
 }
 
-.logo {
-    height: 90px;
-    margin-top: 8px;
+.circle-image {
+    width: 4em;
+    height: 4em;
+    border-radius: 100%;
+    border: 3px solid white;
+    margin-right: 1em;
+}
+
+.nav-height {
+    height: 65px;
 }

@@ -12,27 +12,36 @@
     <body>
     
         <!-----------NAVBAR------------>
-        <header class="fixed-top shadow-lg">
-            <nav class="navbar navbar-expand-lg navbar-dark nav-basis-settings">
-                <a class="navbar-brand" href="products.html">
-                    <img src="../images/raptor-logo.png" class="logo" alt="raptor electronic logo">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="" href="../../index.html">
+                    <img src="../images/raptor-logo.png" class="logo" alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-                        aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link " href="products.html">Productos <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link active" href="services.html">Servicios</a>
-                        <a class="nav-item nav-link" href="status-of-services.html">Estado de Servicio</a>
-                        <a class="nav-item nav-link" href="us.html">Nosotros</a>
-                        <a class="nav-item nav-link" href="contact.html">Contacto</a>
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="products.html">Productos <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-item nav-link" href="services.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="status-of-services.html">Estado de Servicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="us.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="contact.html">Contacto</a>
+                        </li>
+              
+                    </ul>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
     
     
         <div class="services-container container m-auto">
@@ -42,7 +51,6 @@
             </div>
             
             <div class="description-section">
-              
                 <img src="../images/services/reparacion.svg" class="tec-service-img" alt="raptor electronic logo">
                 <div class="d-flex flex-column text-center tec-service-description">
                     <h2>Servicio técnico en reparación</h2>
@@ -52,61 +60,152 @@
                     </p>
                 </div>
             </div>
-            
         </div>
     
         <!-----------BASIS SERVICES------------>
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container d-flex justify-content-around align-items-center">
-                <div class="align-items-center">
-                    <img src="../images/services/revision.svg" class="tec-service-icons" alt="raptor electronic logo">
-                    <P class="lead text-center m-sm-auto font-weight-bold">Revisión</P>
-                    <p class="lead text-center m-0">
-                        BsS 120
-                    </p>
+    
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class=" carousel-inner" style="background-color: var(--blue-dark)">
+    
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-around ml-xl-5 mr-xl-5">
+                        <div class="card shadow-sm m-5" style="width: 12rem; height: 20em">
+                            <div class="svg-service-icon">
+                                <img class="card-img-top img-fluid "  src="../images/services/revision.svg" alt="Card image cap">
+                            </div>
+                            <div class="card-body card-body-product text-center">
+                                <h5 class="card-title">Revisión</h5>
+                                <p class="card-text">BsS 125.000.00</p>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm m-5" style="width: 12rem; height: 20em">
+                            <div class="svg-service-icon">
+                                <img class="card-img-top img-fluid "  src="../images/services/revision.svg" alt="Card image cap">
+                            </div>
+                            <div class="card-body card-body-product text-center">
+                                <h5 class="card-title">Revisión</h5>
+                                <p class="card-text">BsS 125.000.00</p>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm m-5" style="width: 12rem; height: 20em">
+                            <div class="svg-service-icon">
+                                <img class="card-img-top img-fluid "  src="../images/services/revision.svg" alt="Card image cap">
+                            </div>
+                            <div class="card-body card-body-product text-center">
+                                <h5 class="card-title">Revisión</h5>
+                                <p class="card-text">BsS 125.000.00</p>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm m-5" style="width: 12rem; height: 20em">
+                            <div class="svg-service-icon">
+                                <img class="card-img-top img-fluid "  src="../images/services/revision.svg" alt="Card image cap">
+                            </div>
+                            <div class="card-body card-body-product text-center">
+                                <h5 class="card-title">Revisión</h5>
+                                <p class="card-text">BsS 125.000.00</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="align-items-center">
-                    <img src="../images/services/unlock.svg" class="tec-service-icons" alt="raptor electronic logo">
-                    <P class="lead text-center m-sm-auto font-weight-bold">Desbloqueo</P>
-                    <p class="lead text-center m-0">
-                        BsS 120
-                    </p>
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-around ml-xl-5 mr-xl-5">
+                        <div class="card shadow-sm m-5" style="width: 12rem; height: 20em">
+                            <div class="svg-service-icon">
+                                <img class="card-img-top img-fluid "  src="../images/services/revision.svg" alt="Card image cap">
+                            </div>
+                            <div class="card-body card-body-product text-center">
+                                <h5 class="card-title">Revisión</h5>
+                                <p class="card-text">BsS 125.000.00</p>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm m-5" style="width: 12rem; height: 20em">
+                            <div class="svg-service-icon">
+                                <img class="card-img-top img-fluid "  src="../images/services/revision.svg" alt="Card image cap">
+                            </div>
+                            <div class="card-body card-body-product text-center">
+                                <h5 class="card-title">Revisión</h5>
+                                <p class="card-text">BsS 125.000.00</p>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm m-5" style="width: 12rem; height: 20em">
+                            <div class="svg-service-icon">
+                                <img class="card-img-top img-fluid "  src="../images/services/revision.svg" alt="Card image cap">
+                            </div>
+                            <div class="card-body card-body-product text-center">
+                                <h5 class="card-title">Revisión</h5>
+                                <p class="card-text">BsS 125.000.00</p>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm m-5" style="width: 12rem; height: 20em">
+                            <div class="svg-service-icon">
+                                <img class="card-img-top img-fluid "  src="../images/services/revision.svg" alt="Card image cap">
+                            </div>
+                            <div class="card-body card-body-product text-center">
+                                <h5 class="card-title">Revisión</h5>
+                                <p class="card-text">BsS 125.000.00</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="align-items-center">
-                    <img src="../images/services/root.svg" class="tec-service-icons" alt="raptor electronic logo">
-                    <P class="lead text-center m-sm-auto font-weight-bold">Root</P>
-                    <p class="lead text-center m-0">
-                        BsS 120
-                    </p>
-                </div>  <div class="align-items-center">
-                    <img src="../images/services/unlock.svg" class="tec-service-icons" alt="raptor electronic logo">
-                    <P class="lead text-center m-sm-auto font-weight-bold">Desbloqueo</P>
-                    <p class="lead text-center m-0">
-                        BsS 120
-                    </p>
+                <div class="carousel-item ">
+                    <div class="d-flex justify-content-around ml-xl-5 mr-xl-5">
+                        <div class="card shadow-sm m-5" style="width: 12rem; height: 20em">
+                            <div class="svg-service-icon">
+                                <img class="card-img-top img-fluid "  src="../images/services/revision.svg" alt="Card image cap">
+                            </div>
+                            <div class="card-body card-body-product text-center">
+                                <h5 class="card-title">Revisión</h5>
+                                <p class="card-text">BsS 125.000.00</p>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm m-5" style="width: 12rem; height: 20em">
+                            <div class="svg-service-icon">
+                                <img class="card-img-top img-fluid "  src="../images/services/revision.svg" alt="Card image cap">
+                            </div>
+                            <div class="card-body card-body-product text-center">
+                                <h5 class="card-title">Revisión</h5>
+                                <p class="card-text">BsS 125.000.00</p>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm m-5" style="width: 12rem; height: 20em">
+                            <div class="svg-service-icon">
+                                <img class="card-img-top img-fluid "  src="../images/services/revision.svg" alt="Card image cap">
+                            </div>
+                            <div class="card-body card-body-product text-center">
+                                <h5 class="card-title">Revisión</h5>
+                                <p class="card-text">BsS 125.000.00</p>
+                            </div>
+                        </div>
+                        <div class="card shadow-sm m-5" style="width: 12rem; height: 20em">
+                            <div class="svg-service-icon">
+                                <img class="card-img-top img-fluid "  src="../images/services/revision.svg" alt="Card image cap">
+                            </div>
+                            <div class="card-body card-body-product text-center">
+                                <h5 class="card-title">Revisión</h5>
+                                <p class="card-text">BsS 125.000.00</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="align-items-center">
-                    <img src="../images/services/root.svg" class="tec-service-icons" alt="raptor electronic logo">
-                    <P class="lead text-center m-sm-auto font-weight-bold">Root</P>
-                    <p class="lead text-center m-0">
-                        BsS 120
-                    </p>
-                </div>  <div class="align-items-center">
-                    <img src="../images/services/unlock.svg" class="tec-service-icons" alt="raptor electronic logo">
-                    <P class="lead text-center m-sm-auto font-weight-bold">Desbloqueo</P>
-                    <p class="lead text-center m-0">
-                        BsS 120
-                    </p>
-                </div>
-                <div class="align-items-center">
-                    <img src="../images/services/root.svg" class="tec-service-icons" alt="raptor electronic logo">
-                    <P class="lead text-center m-sm-auto font-weight-bold">Root</P>
-                    <p class="lead text-center m-0">
-                        BsS 120
-                    </p>
-                </div>
+                
+                
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
         </div>
+        
+       
     
         <!-----------FOOTER------------>
         <footer class="">
