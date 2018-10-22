@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Raptor Electronic | Estado de Servicios</title>
+        <link rel="stylesheet" href="../css/components/header.css">
+        <link rel="stylesheet" href="../css/status-of-services.css">
+        <link rel="stylesheet" href="../css/components/form-fields.css">
+        <link rel="stylesheet" href="../css/products.css">
+        <link rel="stylesheet" href="../css/components/modals.css">
+        <link rel="stylesheet" href="../css/components/buttons.css">
+        <link rel="stylesheet" href="../css/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="../css/base.css">
+    </head>
+    <body>
+    
+        <!-----------ADMIN NAVBAR------------>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="d-flex" href="#">
+                    <img src="../images/admin-pic.jpg" class="circle-image" alt="">
+                    <div class="profile-div align-self-center">
+                        <p class="admin">Administrador</p>
+                        <p class="admin-name">Jon Mircha</p>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="products.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="services.html">Servicios</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-item nav-link" href="status-of-services.html">Estado de Servicio <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-item nav-link" href="admin.html">Administradores</a>
+                        </li>
+                        <li class="nav-item d-flex">
+                            <a class="svg-logout-div" href="../../index.html" data-toggle="tooltip" data-placement="bottom" title="Salir" >
+                                <img src="../images/logout.svg" class="svg-logout ">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="container div-title">
+            <h1 class="title">Estado de Servicios</h1>
+        </div>
+    
+        <!-----------ADMIN SEARCH------------>
+        <div class="container">
+            <div class="search-container">
+                <button class="add-button" data-toggle="modal" data-target="#addProductModal">
+                    Agregar
+                    <img src="../images/products/add.svg" class="add-button" alt="">
+                </button>
+                <div class="d-flex">
+                    <input class="search-field" placeholder="Buscar">
+                    <img src="../images/search-tool.svg" class="search-icon" alt="">
+                </div>
+            </div>
+        </div>
+    
+        <div class="container status-of-services__container">
+            
+            <table class="table table-hover table-striped">
+                <thead>
+                <tr>
+                    <th scope="col">Codigo</th>
+                    <th scope="col">Cedula</th>
+                    <th scope="col">Num Telefono</th>
+                    <th scope="col">Fecha Inicio</th>
+                    <th scope="col">Fecha Cierre</th>
+                    <th scope="col">CI Empleado</th>
+                    <th scope="col">Entrega</th>
+                    <th scope="col"></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">5565</th>
+                    <td>20568478</td>
+                    <td>04243568841</td>
+                    <td>12-09-17</td>
+                    <td>29-09-17</td>
+                    <td>16158499</td>
+                    <td>@SI</td>
+                    <td>
+                        <div class="d-flex justify-content-end">
+                            <a href="" data-toggle="modal" data-target="#editProductModal">
+                                <img class="mr-1" height="16px" src="../images/edit.svg">
+                            </a>
+                            <a href="" data-toggle="modal" data-target="#deleteProductModal">
+                                <img class="mr-1" height="16px" src="../images/delete.svg">
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">5566</th>
+                    <td>10985222</td>
+                    <td>04243056841</td>
+                    <td>07-11-17</td>
+                    <td>09-11-17</td>
+                    <td>16158499</td>
+                    <td>@NO</td>
+                    <td>
+                        <div class="d-flex justify-content-end">
+                            <a href="" data-toggle="modal" data-target="#editProductModal">
+                                <img class="mr-1" height="16px" src="../images/edit.svg">
+                            </a>
+                            <a href="" data-toggle="modal" data-target="#deleteProductModal">
+                                <img class="mr-1" height="16px" src="../images/delete.svg">
+                            </a>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <th scope="row">5567</th>
+                    <td>7455552</td>
+                    <td>04243560805</td>
+                    <td>16-11-17</td>
+                    <td>25-11-17</td>
+                    <td>19522444</td>
+                    <td>@SI</td>
+                    <td>
+                        <div class="d-flex justify-content-end">
+                            <a href="" data-toggle="modal" data-target="#editProductModal">
+                                <img class="mr-1" height="16px" src="../images/edit.svg">
+                            </a>
+                            <a href="" data-toggle="modal" data-target="#deleteProductModal">
+                                <img class="mr-1" height="16px" src="../images/delete.svg">
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">5565</th>
+                    <td>20568478</td>
+                    <td>04243568841</td>
+                    <td>12-09-17</td>
+                    <td>29-09-17</td>
+                    <td>16158499</td>
+                    <td>@SI</td>
+                    <td>
+                        <div class="d-flex justify-content-end">
+                            <a href="" data-toggle="modal" data-target="#editProductModal">
+                                <img class="mr-1" height="16px" src="../images/edit.svg">
+                            </a>
+                            <a href="" data-toggle="modal" data-target="#deleteProductModal">
+                                <img class="mr-1" height="16px" src="../images/delete.svg">
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">5566</th>
+                    <td>10985222</td>
+                    <td>04243056841</td>
+                    <td>07-11-17</td>
+                    <td>09-11-17</td>
+                    <td>16158499</td>
+                    <td>@NO</td>
+                    <td>
+                        <div class="d-flex justify-content-end">
+                            <a href="" data-toggle="modal" data-target="#editProductModal">
+                                <img class="mr-1" height="16px" src="../images/edit.svg">
+                            </a>
+                            <a href="" data-toggle="modal" data-target="#deleteProductModal">
+                                <img class="mr-1" height="16px" src="../images/delete.svg">
+                            </a>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <th scope="row">5567</th>
+                    <td>7455552</td>
+                    <td>04243560805</td>
+                    <td>16-11-17</td>
+                    <td>25-11-17</td>
+                    <td>19522444</td>
+                    <td>@SI</td>
+                    <td>
+                        <div class="d-flex justify-content-end">
+                            <a href="" data-toggle="modal" data-target="#editProductModal">
+                                <img class="mr-1" height="16px" src="../images/edit.svg">
+                            </a>
+                            <a href="" data-toggle="modal" data-target="#deleteProductModal">
+                                <img class="mr-1" height="16px" src="../images/delete.svg">
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">5565</th>
+                    <td>20568478</td>
+                    <td>04243568841</td>
+                    <td>12-09-17</td>
+                    <td>29-09-17</td>
+                    <td>16158499</td>
+                    <td>@SI</td>
+                    <td>
+                        <div class="d-flex justify-content-end">
+                            <a href="" data-toggle="modal" data-target="#editProductModal">
+                                <img class="mr-1" height="16px" src="../images/edit.svg">
+                            </a>
+                            <a href="" data-toggle="modal" data-target="#deleteProductModal">
+                                <img class="mr-1" height="16px" src="../images/delete.svg">
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">5566</th>
+                    <td>10985222</td>
+                    <td>04243056841</td>
+                    <td>07-11-17</td>
+                    <td>09-11-17</td>
+                    <td>16158499</td>
+                    <td>@NO</td>
+                    <td>
+                        <div class="d-flex justify-content-end">
+                            <a href="" data-toggle="modal" data-target="#editProductModal">
+                                <img class="mr-1" height="16px" src="../images/edit.svg">
+                            </a>
+                            <a href="" data-toggle="modal" data-target="#deleteProductModal">
+                                <img class="mr-1" height="16px" src="../images/delete.svg">
+                            </a>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <th scope="row">5567</th>
+                    <td>7455552</td>
+                    <td>04243560805</td>
+                    <td>16-11-17</td>
+                    <td>25-11-17</td>
+                    <td>19522444</td>
+                    <td>@SI</td>
+                    <td>
+                        <div class="d-flex justify-content-end">
+                            <a href="" data-toggle="modal" data-target="#editProductModal">
+                                <img class="mr-1" height="16px" src="../images/edit.svg">
+                            </a>
+                            <a href="" data-toggle="modal" data-target="#deleteProductModal">
+                                <img class="mr-1" height="16px" src="../images/delete.svg">
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+    
+            <!-----------ADMIN STATUS OF SERVICES PAGINATION------------>
+            <nav aria-label="..." class="d-flex justify-content-center products-pagination">
+                <ul class="pagination pagination-sm">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1">1</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    
+        <!------ADD STATUS OF SERVICES MODAL------->
+        <div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" >Agregar Servicio</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body d-flex flex-column">
+                        <input type="file" id="openFile" style="display: none">
+                        <a href="#" class="m-auto" style="width: 390px"  onclick="chooseProduct();return">
+                            <img class="card-img-top" style="background-color: #8698B7" height="200" src="../images/bg-for-photo.svg" alt="Card image cap">
+                        </a>
+                        <div>
+                            <input type="number" class="--modal-prod-name-field" placeholder="Codigo de Servcio" >
+                            <input type="text" class="--modal-prod-name-field" placeholder="CI Cliente" >
+                            <input type="text" class="--modal-prod-name-field" placeholder="Nombre" >
+                            <input type="text" class="--modal-prod-name-field" placeholder="Num. Telefono" >
+                            <input type="text" class="--modal-prod-name-field" placeholder="Precio" >
+                            
+                            <div class="d-flex justify-content-around">
+                                <input type="date" class="--modal-prod-name-field" placeholder="Fecha Actual" >
+                                <input type="date" class="--modal-prod-name-field" placeholder="Fecha Prevista" >
+                            </div>
+                            
+                            <div class="d-flex justify-content-around">
+                                <select class="form-field --form-field-modal" title="Estado">
+                                    <option value="volvo">En proceso</option>
+                                    <option value="saab">Finalizado</option>
+                                </select>
+                                <select class="form-field --form-field-modal" title="Recibido">
+                                    <option value="volvo">@NO</option>
+                                    <option value="saab">@SI</option>
+                                </select>
+                            </div>
+                        </div>
+                        <textarea class="modal-textarea --modal-textarea-prod" placeholder="Descripción del servicio"></textarea>
+                        <textarea class="modal-textarea --modal-textarea-prod" placeholder="Comentarios del Estado de Servicio"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!------EDIT STATUS OF SERVICES MODAL------->
+        <div class="modal fade" id="editProductModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" >Editar Estado de Servicio</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body d-flex flex-column">
+                        <input type="file" id="openFile" style="display: none">
+                        <a href="#" class="m-auto" style="width: 390px"  onclick="chooseProduct();return">
+                            <img class="card-img-top" style="background-color: #8698B7" height="200" src="../images/bg-for-photo.svg" alt="Card image cap">
+                        </a>
+                        <div>
+                            <input type="text" class="--modal-prod-name-field" placeholder="Nombre del producto" >
+                            <div class="d-flex justify-content-around">
+                                <input type="text" class="form-field --form-field-modal" placeholder="Precio">
+                                <select class="form-field --form-field-modal" title="">
+                                    <option value="volvo">Accesorios</option>
+                                    <option value="saab">Dispositivos</option>
+                                    <option value="mercedes">Refaccion</option>
+                                </select>
+                            </div>
+                        </div>
+                        <textarea class="modal-textarea --modal-textarea-prod" placeholder="Descripción del producto"></textarea>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+        <!-- DELETE MODAL -->
+        <div class="modal fade" id="deleteProductModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="">Eliminar</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ¿Esta seguro que desea eliminar este registro?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-danger">Eliminar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <script>
+            function chooseProduct() {
+                console.log('bien');
+                document.getElementById("openFile").click();
+            }
+        </script>
+    
+        <script src="../css/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../css/bootstrap/js/bootstrap.js"></script>
+        
+    </body>
+</html>
