@@ -45,6 +45,11 @@
     outline: none;
 }
 
+.--w-field {
+    width: 150px;
+    margin: 20px auto;
+}
+
 .--modal-prod-name-field:focus {
     background-color: white;
     border-bottom: 2px solid var(--blue-dark);
