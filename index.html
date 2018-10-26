@@ -3,9 +3,168 @@
     <head>
         <meta charset="UTF-8">
         <title>Raptor Electronic</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="views/css/components/header.css">
+        <link rel="stylesheet" href="views/css/slider.css">
+        <link rel="stylesheet" href="views/css/components/banner.css">
+        <link rel="stylesheet" href="views/css/products.css">
+        <link rel="stylesheet" href="views/css/components/footer.css">
+        <link rel="stylesheet" href="views/css/bootstrap/bootstrap.css">
+        <link rel="stylesheet" href="views/css/base.css">
     </head>
     <body>
-        <h1>Hola</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aperiam, beatae consequatur dolores explicabo itaque iure maiores minus molestias, nisi obcaecati, repellendus rerum vel voluptas voluptatem. Distinctio dolore mollitia natus?</p>
+    
+        <!-----------NAVBAR------------>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="" href="index.html">
+                    <img src="views/images/raptor-logo.png" class="logo" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="views/modules/products.html">Productos <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="views/modules/services.html">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-item nav-link" href="views/modules/status-of-services.html">Estado de Servicio</a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-item nav-link" href="views/modules/us.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item mr-2">
+                            <a class="nav-item nav-link" href="views/modules/contact.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+    
+        <!-----------SLIDER------------>
+        <div id="carouselExampleIndicators" class="carousel slide container slider-margin" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="views/images/banner/1.PNG" height="450" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="views/images/banner/2.PNG" height="450" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="views/images/banner/3.PNG" height="450" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="views/images/banner/4.PNG" height="450" alt="Ford slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        
+        <!--------PRESENTATION CARDS--------->
+        <div class="container card-columns d-flex justify-content-between flex-wrap mt-5">
+            <div class="card shadow-sm" style="width: 20rem; height: 22rem;">
+                <div class="card-body card-body--presentation">
+                    <h5 class="card-title text-center">Accesorios</h5>
+                    <img class="card-img-top img-fluid mb-4 mt-3" height="200" src="views/images/index/a.jpg" alt="Card image">
+                    <p class="card-text">Todo tipo de accesorios para moviles de la mejor calidad y en diversas marcas y precios.</p>
+                </div>
+            </div>
+            <div class="card shadow-sm" style="width: 20rem; height: 22rem;">
+                <div class="card-body card-body--presentation">
+                    <img class="card-img-top img-fluid mb-4 mt-3" height="200" src="views/images/index/b.jpg" alt="Card image">
+                    <h5 class="card-title text-center">Dispositivos Moviles</h5>
+                    <p class="card-text">Diversos equipos en todo tipo marcas y modelos.</p>
+                </div>
+            </div>
+            <div class="card shadow-sm" style="width: 20rem; height: 22rem;">
+                <div class="card-body card-body--presentation">
+                    <h5 class="card-title text-center">Personal Calificado</h5>
+                    <img class="card-img-top img-fluid mb-4 mt-3" height="200" src="views/images/index/c.jpg" alt="Card image">
+                    <p class="card-text">Todo tipo de accesorios para moviles de la mejor calidad y en diversas marcas y precios.</p>
+                </div>
+            </div>
+            
+        </div>
+    
+        <!-----------BANNER------------>
+        <aside class="banner">
+            <span class="banner-tittle" >#RaptorElectronic</span>
+            <a href="views/modules/us.html"><button class="banner__button btn badge-pill text-white" type="button">Conocenos</button></a>
+        </aside>
+        
+        <!-----------PRODUCT CARDS------------>
+        <h3 class="container">Ultimos Productos</h3>
+        <div class="container card-columns d-flex justify-content-between flex-wrap">
+            <div class="card shadow-sm" style="width: 18rem;">
+                <img class="card-img-top img-fluid" height="285" src="views/images/products/xiaomi-redmi.jpg" alt="Card image cap">
+                <div class="card-body card-body-product">
+                    <h5 class="card-title">Xiaomi Redmin</h5>
+                    <p class="card-text">BsS 125.000.00</p>
+                </div>
+            </div>
+            <div class="card shadow-sm" style="width: 18rem;">
+                <img class="card-img-top img-fluid" height="285" src="views/images/products/huawei-yt-lite.jpg" alt="Card image cap">
+                <div class="card-body  card-body-product">
+                    <h5 class="card-title">Huawei YT Lite</h5>
+                    <p class="card-text">BsS 125.000.00</p>
+                </div>
+            </div>
+            <div class="card shadow-sm" style="width: 18rem;">
+                <img class="card-img-top img-fluid" height="285" src="views/images/products/xr5.jpg" alt="Card image cap">
+                <div class="card-body card-body-product">
+                    <h5 class="card-title">Xiaomi XR5</h5>
+                    <p class="card-text">BsS 125.000.00</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-----------FOOTER------------>
+        <footer class="">
+            <div class="footer-basis-settings d-flex justify-content-around ">
+                <div class=" align-self-center">
+                    <p class="contact-data">Teléfonos:</p>
+                    <p class="contact-data">0412-4370516</p>
+                    <br>
+                    <p class="contact-data">Correo:</p>
+                    <p class="contact-data">raptorelectronic@gmail.com</p>
+                </div>
+            
+                <div class="align-self-center">
+                    <p class="contact-data">Siguenos en:</p>
+                    <a class="d-flex justify-content-center" href="https://www.instagram.com/raptorelectronic/" target="_blank">
+                        <img src="views/images/instagram.svg" class="social-icon" alt="raptor electronic logo">
+                    </a>
+                </div>
+            </div>
+        
+            <div class="copy-right-container">
+                <p class="copy-text">
+                    &copy; 2018 Raptor Electronic | Todos los derchos reservados.
+                </p>
+            </div>
+        </footer>
+    
+    
+        <script src="views/css/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="views/css/bootstrap/js/bootstrap.js"></script>
+        
     </body>
 </html>
