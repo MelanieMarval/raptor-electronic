@@ -64,6 +64,12 @@
     color: white;
 }
 
+.card-body--presentation {
+    background-color: var(--green-light);
+    height: 100%;
+    color: white;
+}
+
 .products-pagination {
     margin-bottom: 40px;
 }
