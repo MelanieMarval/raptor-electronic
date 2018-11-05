@@ -1,0 +1,9 @@
+# prevent showing the directories list of contents
+
+Options all -Indexes
+
+# Friendly URLS
+
+RewriteEngine on
+
+RewriteRule ^(\w+)$ index.php?action=$1

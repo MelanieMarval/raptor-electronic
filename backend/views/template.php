@@ -6,21 +6,23 @@
         <link rel="stylesheet" href="views/css/components/form-fields.css">
         <link rel="stylesheet" href="views/css/components/buttons.css">
         <link rel="stylesheet" href="views/css/login.css">
+        <link rel="stylesheet" href="views/css/components/header.css">
+        <link rel="stylesheet" href="views/css/products.css">
         <link rel="stylesheet" href="views/css/bootstrap/bootstrap.css">
         <link rel="stylesheet" href="views/css/base.css">
 
     </head>
-    <body class="--body-login">
-        <img src="views/images/raptor-logo.svg" class="svg-raptor">
-        
-        <div class="login-container shadow-lg">
-            <img src="views/images/login.svg" class="svg-login">
-            <input type="text" class="form-field" placeholder="Usuario">
-            <input type="password" class="form-field" placeholder="Contraseña">
-            <a href="views/modules/products.html" class="btn btn-primary --btn-dark-green" >Aceptar</a>
+    <body>
+
+        <div class="">
+
+            <?php
+                $module = new RouterController();
+                $module->includeRequiredModule();
+            ?>
+
         </div>
-        
-    
+
         <script src="views/css/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
         <script src="views/css/bootstrap/js/bootstrap.js"></script>
     </body>
