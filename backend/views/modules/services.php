@@ -7,7 +7,7 @@ if (!$_SESSION['session']) {
     exit();
 }
 
-include 'views/modules/header.php'
+include "header.php";
 
 ?>
 
@@ -19,7 +19,7 @@ include 'views/modules/header.php'
 <div class="container">
     <button class="add-button  ml-3 mb-4" data-toggle="modal" data-target="#addServiceModal">
         Agregar
-        <img src="../images/products/add.svg" class="add-button" alt="">
+        <img src="views/images/products/add.svg" class="add-button" alt="">
     </button>
 </div>
 
@@ -30,14 +30,14 @@ include 'views/modules/header.php'
     <div class="card shadow-sm" style="width: 12rem; height: 20em">
         <div class="d-flex justify-content-end">
             <a href="#" data-toggle="modal" data-target="#addServiceModal">
-                <img class="mr-1" height="16px" src="../images/edit.svg">
+                <img class="mr-1" height="16px" src="views/images/edit.svg">
             </a>
             <a href="#" data-toggle="modal" data-target="#deleteServiceModal">
-                <img class="mr-1" height="16px" src="../images/delete.svg">
+                <img class="mr-1" height="16px" src="views/images/delete.svg">
             </a>
         </div>
         <div class="svg-service-icon">
-            <img class="card-img-top img-fluid "  src="../images/services/revision.svg" alt="Card image cap">
+            <img class="card-img-top img-fluid "  src="views/images/services/revision.svg" alt="Card image cap">
         </div>
         <div class="card-body card-body-product text-center">
             <h5 class="card-title">Revisión</h5>
@@ -47,14 +47,14 @@ include 'views/modules/header.php'
     <div class="card shadow-sm" style="width: 12rem; height: 20em">
         <div class="d-flex justify-content-end">
             <a href="#" data-toggle="modal" data-target="#addServiceModal">
-                <img class="mr-1" height="16px" src="../images/edit.svg">
+                <img class="mr-1" height="16px" src="views/images/edit.svg">
             </a>
             <a href="#" data-toggle="modal" data-target="#deleteServiceModal">
-                <img class="mr-1" height="16px" src="../images/delete.svg">
+                <img class="mr-1" height="16px" src="views/images/delete.svg">
             </a>
         </div>
         <div class="svg-service-icon">
-            <img class="card-img-top img-fluid "  src="../images/services/unlock.svg" alt="Card image cap">
+            <img class="card-img-top img-fluid "  src="views/images/services/unlock.svg" alt="Card image cap">
         </div>
         <div class="card-body card-body-product text-center">
             <h5 class="card-title">Desbloqueo</h5>
@@ -64,14 +64,14 @@ include 'views/modules/header.php'
     <div class="card shadow-sm" style="width: 12rem; height: 20em">
         <div class="d-flex justify-content-end">
             <a href="#" data-toggle="modal" data-target="#addServiceModal">
-                <img class="mr-1" height="16px" src="../images/edit.svg">
+                <img class="mr-1" height="16px" src="views/images/edit.svg">
             </a>
             <a href="#" data-toggle="modal" data-target="#deleteServiceModal">
-                <img class="mr-1" height="16px" src="../images/delete.svg">
+                <img class="mr-1" height="16px" src="views/images/delete.svg">
             </a>
         </div>
         <div class="svg-service-icon">
-            <img class="card-img-top img-fluid" src="../images/services/root.svg" alt="Card image cap">
+            <img class="card-img-top img-fluid" src="views/images/services/root.svg" alt="Card image cap">
         </div>
         <div class="card-body card-body-product text-center">
             <h5 class="card-title">Root</h5>
@@ -81,14 +81,14 @@ include 'views/modules/header.php'
     <div class="card shadow-sm" style="width: 12rem; height: 20em">
         <div class="d-flex justify-content-end">
             <a href="#" data-toggle="modal" data-target="#addServiceModal">
-                <img class="mr-1" height="16px" src="../images/edit.svg">
+                <img class="mr-1" height="16px" src="views/images/edit.svg">
             </a>
             <a href="#" data-toggle="modal" data-target="#deleteServiceModal">
-                <img class="mr-1" height="16px" src="../images/delete.svg">
+                <img class="mr-1" height="16px" src="views/images/delete.svg">
             </a>
         </div>
         <div class="svg-service-icon">
-            <img class="card-img-top img-fluid "  src="../images/services/revision.svg" alt="Card image cap">
+            <img class="card-img-top img-fluid "  src="views/images/services/revision.svg" alt="Card image cap">
         </div>
         <div class="card-body card-body-product text-center">
             <h5 class="card-title">Revisión</h5>
@@ -98,14 +98,14 @@ include 'views/modules/header.php'
     <div class="card shadow-sm" style="width: 12rem; height: 20em">
         <div class="d-flex justify-content-end">
             <a href="#" data-toggle="modal" data-target="#addServiceModal">
-                <img class="mr-1" height="16px" src="../images/edit.svg">
+                <img class="mr-1" height="16px" src="views/images/edit.svg">
             </a>
             <a href="#" data-toggle="modal" data-target="#deleteServiceModal">
-                <img class="mr-1" height="16px" src="../images/delete.svg">
+                <img class="mr-1" height="16px" src="views/images/delete.svg">
             </a>
         </div>
         <div class="svg-service-icon">
-            <img class="card-img-top img-fluid "  src="../images/services/unlock.svg" alt="Card image cap">
+            <img class="card-img-top img-fluid "  src="views/images/services/unlock.svg" alt="Card image cap">
         </div>
         <div class="card-body card-body-product text-center">
             <h5 class="card-title">Desbloqueo</h5>
@@ -115,14 +115,14 @@ include 'views/modules/header.php'
     <div class="card shadow-sm" style="width: 12rem; height: 20em">
         <div class="d-flex justify-content-end">
             <a href="#" data-toggle="modal" data-target="#addServiceModal">
-                <img class="mr-1" height="16px" src="../images/edit.svg">
+                <img class="mr-1" height="16px" src="views/images/edit.svg">
             </a>
             <a href="#" data-toggle="modal" data-target="#deleteServiceModal">
-                <img class="mr-1" height="16px" src="../images/delete.svg">
+                <img class="mr-1" height="16px" src="views/images/delete.svg">
             </a>
         </div>
         <div class="svg-service-icon">
-            <img class="card-img-top img-fluid" src="../images/services/root.svg" alt="Card image cap">
+            <img class="card-img-top img-fluid" src="views/images/services/root.svg" alt="Card image cap">
         </div>
         <div class="card-body card-body-product text-center">
             <h5 class="card-title">Root</h5>
@@ -132,14 +132,14 @@ include 'views/modules/header.php'
     <div class="card shadow-sm" style="width: 12rem; height: 20em">
         <div class="d-flex justify-content-end">
             <a href="#" data-toggle="modal" data-target="#addServiceModal">
-                <img class="mr-1" height="16px" src="../images/edit.svg">
+                <img class="mr-1" height="16px" src="views/images/edit.svg">
             </a>
             <a href="#" data-toggle="modal" data-target="#deleteServiceModal">
-                <img class="mr-1" height="16px" src="../images/delete.svg">
+                <img class="mr-1" height="16px" src="views/images/delete.svg">
             </a>
         </div>
         <div class="svg-service-icon">
-            <img class="card-img-top img-fluid "  src="../images/services/revision.svg" alt="Card image cap">
+            <img class="card-img-top img-fluid "  src="views/images/services/revision.svg" alt="Card image cap">
         </div>
         <div class="card-body card-body-product text-center">
             <h5 class="card-title">Revisión</h5>
@@ -149,14 +149,14 @@ include 'views/modules/header.php'
     <div class="card shadow-sm" style="width: 12rem; height: 20em">
         <div class="d-flex justify-content-end">
             <a href="#" data-toggle="modal" data-target="#addServiceModal">
-                <img class="mr-1" height="16px" src="../images/edit.svg">
+                <img class="mr-1" height="16px" src="views/images/edit.svg">
             </a>
             <a href="#" data-toggle="modal" data-target="#deleteServiceModal">
-                <img class="mr-1" height="16px" src="../images/delete.svg">
+                <img class="mr-1" height="16px" src="views/images/delete.svg">
             </a>
         </div>
         <div class="svg-service-icon">
-            <img class="card-img-top img-fluid "  src="../images/services/unlock.svg" alt="Card image cap">
+            <img class="card-img-top img-fluid "  src="views/images/services/unlock.svg" alt="Card image cap">
         </div>
         <div class="card-body card-body-product text-center">
             <h5 class="card-title">Desbloqueo</h5>
@@ -166,14 +166,14 @@ include 'views/modules/header.php'
     <div class="card shadow-sm" style="width: 12rem; height: 20em">
         <div class="d-flex justify-content-end">
             <a href="#" data-toggle="modal" data-target="#addServiceModal">
-                <img class="mr-1" height="16px" src="../images/edit.svg">
+                <img class="mr-1" height="16px" src="views/images/edit.svg">
             </a>
             <a href="#" data-toggle="modal" data-target="#deleteServiceModal">
-                <img class="mr-1" height="16px" src="../images/delete.svg">
+                <img class="mr-1" height="16px" src="views/images/delete.svg">
             </a>
         </div>
         <div class="svg-service-icon">
-            <img class="card-img-top img-fluid" src="../images/services/root.svg" alt="Card image cap">
+            <img class="card-img-top img-fluid" src="views/images/services/root.svg" alt="Card image cap">
         </div>
         <div class="card-body card-body-product text-center">
             <h5 class="card-title">Root</h5>
@@ -197,7 +197,7 @@ include 'views/modules/header.php'
             </div>
             <div class="modal-body d-flex flex-column">
                 <input type="file" id="openFile" style="display: none">
-                <a href="#" class="m-auto" style="width: 390px"  onclick="chooseProduct();return">
+                <a href="#" class="m-auto" style="width: 390px"  onclick="uploadFile();return">
                     <img class="card-img-top" style="background-color: #8698B7" height="200" src="../images/bg-for-photo.svg" alt="Card image cap">
                 </a>
                 <div class="m-5 d-flex flex-column">

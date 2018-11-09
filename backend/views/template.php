@@ -10,20 +10,18 @@
         <link rel="stylesheet" href="views/css/products.css">
         <link rel="stylesheet" href="views/css/bootstrap/bootstrap.css">
         <link rel="stylesheet" href="views/css/base.css">
-
     </head>
     <body>
 
-        <div class="">
-
+        <div>
             <?php
                 $module = new RouterController();
                 $module->includeRequiredModule();
-            ?>
-
+              ?>
         </div>
 
         <script src="views/css/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
         <script src="views/css/bootstrap/js/bootstrap.js"></script>
+
     </body>
 </html>

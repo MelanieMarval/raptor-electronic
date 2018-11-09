@@ -34,3 +34,9 @@
     margin: 0;
     font-size: 12px;
 }
+
+@media only screen and (max-width: 800px) {
+    .logo{
+        height: 25%;
+    }
+}

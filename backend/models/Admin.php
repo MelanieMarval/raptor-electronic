@@ -35,6 +35,29 @@ class Admin extends DBConnection
         $preparedStmt -> close();
     }
 
+    public function existAdmin($adminData, $table) {
+
+        try {
+
+            $query = "SELECT ci, username FROM $table WHERE ci = :ci AND username = :username";
+
+            $stmt = DBConnection::connect()->prepare($query);
+            $stmt -> bindParam(':ci', $adminData['ci']);
+            $stmt -> bindParam(':username', $adminData['username']);
+
+            $stmt->execute();
+
+            if ($stmt->fetch()) {
+                return true;
+            }
+
+            return false;
+
+        } catch (PDOException $exception) {
+            echo "Error: " . $exception->getMessage();
+        }
+    }
+
     public function getAllEmployeesDB($table) {
 
         $query = "SELECT ci, name, phone_number, email, birthday, position FROM $table";

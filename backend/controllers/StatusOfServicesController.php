@@ -28,18 +28,28 @@ class StatusOfServicesController
             'comment' => $_POST['comment'],
             'delivered' => $_POST['delivered']);
 
-       var_dump($statusData['delivered']);
+            $existStatus = (new StatusOfServices) ->existStatus($statusData, 'status_of_services');
 
-            $answer = (new StatusOfServices)->registerStatusOfServiceDB($statusData, 'status_of_services');
+            if (!$existStatus) {
+                $answer = (new StatusOfServices)->registerStatusOfServiceDB($statusData, 'status_of_services');
 
-            if ($answer == 'success') {
-                header('location:status_of_services');
+                if ($answer == 'success') {
+                    header('location:status_of_services');
+                }
+            } else {
+                echo '<script>console.log("In")</script>';
+//                header('location:status_of_services');
+                echo '<div class="alert alert-danger" role="alert">
+                        Ya existe un registro con ese codigo!
+                    </div>';
+
             }
+
         }
     }
 
     public function loadStatusOfServicesTable() {
-        echo '<script>console.log("In")</script>';
+        //echo '<script>console.log("In")</script>';
 
         $allStatusOfServices = (new StatusOfServices)->getAllStatusOfServices('status_of_services');
 
@@ -63,10 +73,10 @@ class StatusOfServicesController
                     <td>'.$delivered.'</td>
                     <td>
                         <div class="d-flex justify-content-end">
-                            <a href="" data-toggle="modal" data-target="#editProductModal">
+                            <a href="" data-toggle="modal" data-target="#editStatusModal">
                                 <img class="mr-1" height="16px" src="views/images/edit.svg">
                             </a>
-                            <a href="" data-toggle="modal" data-target="#deleteProductModal">
+                            <a href="" data-toggle="modal" data-target="#deleteStatusModal">
                                 <img class="mr-1" height="16px" src="views/images/delete.svg">
                             </a>
                         </div>
@@ -77,7 +87,7 @@ class StatusOfServicesController
 
     }
 
-    public function loadTechnicals(){
+    public function oadTechnicals(){
 
         $technical = (new StatusOfServices)->getTechnicalEmployee('Tecnico', 'employees');
 

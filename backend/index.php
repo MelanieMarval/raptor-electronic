@@ -14,3 +14,4 @@ include_once 'controllers/StatusOfServicesController.php';
 
 $template = new TemplateController();
 $template -> includeTemplate();
+

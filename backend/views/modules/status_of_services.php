@@ -20,7 +20,7 @@ include 'views/modules/header.php'
     <!-----------ADMIN SEARCH------------>
     <div class="container">
         <div class="search-container">
-            <button class="add-button" data-toggle="modal" data-target="#addProductModal">
+            <button class="add-button" data-toggle="modal" data-target="#addStatusModal">
                 Agregar
                 <img src="views/images/products/add.svg" class="add-button" alt="">
             </button>
@@ -49,7 +49,7 @@ include 'views/modules/header.php'
                 <th scope="col">Num. Telefono</th>
                 <th scope="col">CI Empleado</th>
                 <th scope="col">Entrega</th>
-                <th scope="col"></th>
+                <th scope="col" class="pr-5"></th>
             </tr>
             </thead>
             <tbody>
@@ -77,7 +77,7 @@ include 'views/modules/header.php'
 </div>
 
 <!------ADD STATUS OF SERVICES MODAL------->
-<div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="addStatusModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <form method="post" class="modal-content">
             <div class="modal-header">
@@ -135,7 +135,7 @@ include 'views/modules/header.php'
 </div>
 
 <!------EDIT PRODUCT MODAL------->
-<div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="editStatusModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <form method="post" class="modal-content">
             <div class="modal-header">
@@ -148,7 +148,7 @@ include 'views/modules/header.php'
                 <input type="file" id="openFile" style="display: none">
                 <div>
                     <div class="container d-flex justify-content-around flex-wrap">
-                        <input type="text" class="--modal-prod-name-field --w-field" name="order_num" placeholder="Codigo" value="<?php ?>">
+                        <input type="text" class="--modal-prod-name-field --w-field" name="order_num" placeholder="Codigo">
                         <input type="text" class="--modal-prod-name-field --w-field" name="client_ci" placeholder="Cedula Cliente" >
                         <input type="text" class="--modal-prod-name-field --w-field" name="name" placeholder="Nombre" >
                         <input type="text" class="--modal-prod-name-field --w-field" name="phone_number" placeholder="Num. Telefono" >
@@ -194,7 +194,7 @@ include 'views/modules/header.php'
 
 
 <!-- DELETE MODAL -->
-<div class="modal fade" id="deleteProductModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="deleteStatusModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">

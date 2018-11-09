@@ -18,8 +18,7 @@ class RouterController
         }
 
         $route = (new Router)->getRouteCreated($moduleName);
-
         include $route;
-
+        return $route;
     }
 }

@@ -49,7 +49,7 @@ include 'views/modules/header.php'
                         <th scope="col">Telefono</th>
                         <th scope="col">Correo</th>
                         <th scope="col">Fecha Nacimiento</th>
-                        <th scope="col"></th>
+                        <th scope="col" class="pr-5"></th>
                     </tr>
                 </thead>
                 <tbody>

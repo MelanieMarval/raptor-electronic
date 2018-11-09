@@ -12,7 +12,11 @@ class StatusOfServices extends DBConnection
     public function registerStatusOfServiceDB($statusData, $table) {
 
         try {
-     $query = "INSERT INTO $table (order_num, client_ci, name, phone_number, email, description, devices, status, begin_at, finish_at, price, employee_id, comment, delivered)
+
+
+
+
+        $query = "INSERT INTO $table (order_num, client_ci, name, phone_number, email, description, devices, status, begin_at, finish_at, price, employee_id, comment, delivered)
                                    VALUES (:order_num, :client_ci, :name, :phone_number, :email, :description, :devices, :status, :begin_at, :finish_at, :price, :employee_id, :comment, :delivered)";
 
             $preparedStmt = DBConnection::connect()->prepare($query);
@@ -32,8 +36,6 @@ class StatusOfServices extends DBConnection
             $preparedStmt->bindParam(':delivered', $statusData['delivered']);
 
             if ($preparedStmt->execute()) {
-//                echo '<script>console.log("In")</script>';
-
                 return 'success';
             } else {
                 return 'error';
@@ -46,6 +48,26 @@ class StatusOfServices extends DBConnection
 //        $preparedStmt -> close();
     }
 
+    public function existStatus($statusData, $table){
+
+        try {
+            $query = "SELECT order_num FROM $table WHERE order_num = :order_num";
+
+            $stmt = DBConnection::connect()->prepare($query);
+            $stmt ->bindParam(':order_num', $statusData['order_num']);
+
+             $stmt ->execute();
+
+            if ($stmt ->fetch()) {
+                return true;
+            }
+            return false;
+
+        } catch (PDOException $exception) {
+            echo "Error: " . $exception->getMessage();
+        }
+
+    }
 
     public function getAllStatusOfServices($table) {
 

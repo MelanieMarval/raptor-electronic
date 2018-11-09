@@ -6,9 +6,7 @@ if (!$_SESSION['session']) {
     header('location:login');
     exit();
 }
-
 include 'views/modules/header.php'
-
 ?>
 
 <div class="container div-title">
@@ -149,7 +147,7 @@ include 'views/modules/header.php'
 <!------ADD PRODUCT MODAL------->
 <div class="modal fade" id="addProductModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
+        <form method="post" enctype="multipart/form-data" class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title" >Agregar producto</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -157,10 +155,11 @@ include 'views/modules/header.php'
                 </button>
             </div>
             <div class="modal-body d-flex flex-column">
-                <input type="file" id="openFile" style="display: none">
-                <a href="#" class="m-auto" style="width: 390px"  onclick="chooseProduct();return">
+                <input type="file" id="openFile" onchange="fileIsReady();" style="display: none">
+                <a href="#" class="m-auto" style="width: 390px"  onclick="uploadFile();return">
                     <img class="card-img-top" style="background-color: #8698B7" height="200" src="views/images/bg-for-photo.svg" alt="Card image cap">
                 </a>
+                <p class="text-center text-black-50 small mt-1">Tamaño recomendado 800px * 400px, peso máximo 2MB</p>
                 <div>
                     <input type="text" class="--modal-prod-name-field" placeholder="Nombre del producto" >
                     <div class="d-flex justify-content-around">
@@ -176,9 +175,9 @@ include 'views/modules/header.php'
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                <button type="button" class="btn btn-primary">Guardar</button>
+                <button type="submit" class="btn btn-primary">Guardar</button>
             </div>
-        </div>
+        </form>
     </div>
 </div>
 
@@ -194,7 +193,7 @@ include 'views/modules/header.php'
             </div>
             <div class="modal-body d-flex flex-column">
                 <input type="file" id="openFile" style="display: none">
-                <a href="#" class="m-auto" style="width: 390px"  onclick="chooseProduct();return">
+                <a href="#" class="m-auto" style="width: 390px"  onclick="uploadFile();return">
                     <img class="card-img-top" style="background-color: #8698B7" height="200" src="views/images/bg-for-photo.svg" alt="Card image cap">
                 </a>
                 <div>
@@ -241,8 +240,4 @@ include 'views/modules/header.php'
 </div>
 
 
-<script>
-    function chooseProduct() {
-        document.getElementById("openFile").click();
-    }
-</script>
+<script src="views/js/products.js"></script>

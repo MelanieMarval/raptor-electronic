@@ -22,11 +22,21 @@ class AdminController
                                'password' => $_POST['password'],
                                'confirm_password' => $_POST['confirm_password']);
 
-            $answer = (new Admin)->registerEmployeeDB($adminData, 'employees');
+            $existAdmin = (new Admin)->existAdmin($adminData, 'employees');
 
-            if ($answer == 'success') {
-                header('location:admin');
+            if (!$existAdmin) {
+                $answer = (new Admin)->registerEmployeeDB($adminData, 'employees');
+
+                if ($answer == 'success') {
+                    header('location:admin');
+                }
+            } else {
+                echo '<div class="alert alert-danger" role="alert">
+                        Ya existe un registro con ese codigo!
+                    </div>';
             }
+
+
         }
     }
 
@@ -59,18 +69,7 @@ class AdminController
 
     public function printReport() {
         $allEmployees = (new Admin)->getAllEmployeesDB("employees");
-
-        foreach ($allEmployees as $row => $item) {
-           echo '<tr>
-                <td scope="row">'.$item['ci'].'</td>
-                <td>'.$item['name'].'</td>
-                <td>'.$item['position'].'</td>
-                <td>'.$item['phone_number'].'</td>
-                <td>'.$item['email'].'</td>
-                <td>'.$item['birthday'].'</td>
-             </tr>';
-        }
-
+        return $allEmployees;
     }
 
 }
