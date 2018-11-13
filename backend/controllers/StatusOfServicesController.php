@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Joshuan Marval
- * Date: 4/11/2018
- * Time: 14:09
- */
 
 class StatusOfServicesController
 {
@@ -87,7 +81,7 @@ class StatusOfServicesController
 
     }
 
-    public function oadTechnicals(){
+    public function loadTechnicals(){
 
         $technical = (new StatusOfServices)->getTechnicalEmployee('Tecnico', 'employees');
 

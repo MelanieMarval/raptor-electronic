@@ -10,13 +10,13 @@ class LoginController
 {
     public function login() {
 
-        if (isset($_POST['username']) && isset($_POST['password'])) {
+        if (!empty($_POST['username']) && !empty($_POST['password'])) {
 
             $loginData = array('username' => $_POST['username'], 'password' => $_POST['password']);
 
             $answer = (new Login)->getEmployeeToLogin($loginData);
 
-        if ($answer['username'] == $_POST['username'] && $answer['password'] ==  $_POST['password']) {
+            if ($answer['username'] == $_POST['username'] && $answer['password'] ==  $_POST['password']) {
 
                 session_start();
                 $_SESSION['session'] = true;
@@ -25,7 +25,9 @@ class LoginController
                 header('location:products');
             }
             else {
-                echo 'error al ingresar';
+                echo '<div class="alert alert-danger" role="alert">
+                        Datos incorrectos!
+                    </div>';
             }
         }
 

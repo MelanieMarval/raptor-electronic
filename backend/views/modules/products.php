@@ -6,7 +6,8 @@ if (!$_SESSION['session']) {
     header('location:login');
     exit();
 }
-include 'views/modules/header.php'
+include 'views/modules/header.php';
+
 ?>
 
 <div class="container div-title">
@@ -49,7 +50,7 @@ include 'views/modules/header.php'
             </div>
             <img class="card-img-top img-fluid" height="285" src="views/images/products/xiaomi-redmi.jpg" alt="Card image cap">
             <div class="card-body card-body-product">
-                <h5 class="card-title">Xiaomi Redmin</h5>
+                <h5 class="card-title">Xiaomi Redmi</h5>
                 <p class="card-text">BsS 125.000.00</p>
             </div>
         </div>
@@ -94,7 +95,7 @@ include 'views/modules/header.php'
             </div>
             <img class="card-img-top img-fluid" height="285" src="views/images/products/alcatel-a30.jpg" alt="Card image cap">
             <div class="card-body card-body-product">
-                <h5 class="card-title">Card title</h5>
+                <h5 class="card-title">Telefono</h5>
                 <p class="card-text">BsS 125.000.00</p>
             </div>
         </div>
@@ -239,5 +240,8 @@ include 'views/modules/header.php'
     </div>
 </div>
 
+<?php
+include 'views/modules/footer.php';
+?>
 
 <script src="views/js/products.js"></script>

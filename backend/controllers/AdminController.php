@@ -1,16 +1,10 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Joshuan Marval
- * Date: 30/10/2018
- * Time: 17:20
- */
 
 class AdminController
 {
     public function createNewEmployee() {
 
-        if (isset($_POST['ci']) && isset($_POST['name'])) {
+        if (!empty($_POST['ci']) && !empty($_POST['name'])) {
 
             $adminData = array('ci' => $_POST['ci'],
                                'name' => $_POST['name'],
@@ -32,11 +26,9 @@ class AdminController
                 }
             } else {
                 echo '<div class="alert alert-danger" role="alert">
-                        Ya existe un registro con ese codigo!
+                        Ya existe un registro con esa cedula!
                     </div>';
             }
-
-
         }
     }
 
@@ -46,7 +38,7 @@ class AdminController
 
         foreach ($allEmployees as $row => $item) {
             echo ' <tr>
-                    <td scope="row">'.$item['ci'].'</td>
+                    <th scope="row">'.$item['ci'].'</th>
                     <td>'.$item['name'].'</td>
                     <td>'.$item['position'].'</td>
                     <td>'.$item['phone_number'].'</td>
@@ -54,10 +46,10 @@ class AdminController
                     <td>'.$item['birthday'].'</td>
                     <td>
                         <div class="d-flex justify-content-end">
-                            <a href="" data-toggle="modal" data-target="#editProductModal">
+                            <a href="" data-toggle="modal" data-target="#editAdminModal">
                                 <img class="mr-1" height="16px" src="views/images/edit.svg">
                             </a>
-                            <a href="" data-toggle="modal" data-target="#deleteProductModal">
+                            <a href="index.php?action=admin&ci='.$item['ci'].'&name='.$item['name'].'&modal=true">
                                 <img class="mr-1" height="16px" src="views/images/delete.svg">
                             </a>
                         </div>
@@ -66,6 +58,23 @@ class AdminController
         }
     }
 
+    public function deleteEmployee($employeeCi) {
+
+        $employeeDeleted = (new Admin) ->deleteEmployeeDB($employeeCi);
+
+            if ($employeeDeleted == 'deleted') {
+                echo '<div class="alert alert-success" role="alert">
+                    Registro eliminado con exito!
+                </div>';
+                header('location:admin');
+            } else {
+                echo '<div class="alert alert-danger" role="alert">
+                    Registro no pudo ser eliminado!
+                </div>';
+                header('location:admin');
+            }
+
+    }
 
     public function printReport() {
         $allEmployees = (new Admin)->getAllEmployeesDB("employees");

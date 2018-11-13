@@ -234,3 +234,7 @@ include "header.php";
         </div>
     </div>
 </div>
+
+<?php
+include 'views/modules/footer.php';
+?>

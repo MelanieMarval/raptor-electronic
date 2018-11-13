@@ -193,18 +193,18 @@ include 'views/modules/header.php'
 </div>
 
 
-<!-- DELETE MODAL -->
+<!-- DELETE STATUS MODAL -->
 <div class="modal fade" id="deleteStatusModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="">Eliminar</h5>
+                <h5 class="modal-title">Eliminar</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                ¿Esta seguro que desea eliminar este producto?
+                ¿Esta seguro que desea eliminar este registro?
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
@@ -213,3 +213,7 @@ include 'views/modules/header.php'
         </div>
     </div>
 </div>
+
+<?php
+include 'views/modules/footer.php';
+?>

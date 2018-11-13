@@ -1,11 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Joshuan Marval
- * Date: 30/10/2018
- * Time: 17:38
- */
+
 require_once 'DBConnection.php';
+
 class Admin extends DBConnection
 {
 
@@ -38,8 +34,7 @@ class Admin extends DBConnection
     public function existAdmin($adminData, $table) {
 
         try {
-
-            $query = "SELECT ci, username FROM $table WHERE ci = :ci AND username = :username";
+            $query = "SELECT ci, username FROM $table WHERE ci = :ci OR username = :username";
 
             $stmt = DBConnection::connect()->prepare($query);
             $stmt -> bindParam(':ci', $adminData['ci']);
@@ -68,5 +63,20 @@ class Admin extends DBConnection
         return $stmt -> fetchAll();
         $stmt -> close();
     }
+
+    public function deleteEmployeeDB($employeeCi) {
+
+        $query = "DELETE FROM employees WHERE ci = $employeeCi";
+
+        $stmt = DBConnection::connect()->query($query);
+
+        if ($stmt -> execute()) {
+            return 'deleted';
+        } else {
+            return 'no deleted';
+        }
+
+    }
+
 
 }

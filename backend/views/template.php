@@ -5,9 +5,12 @@
         <title>Raptor Electronic | Login</title>
         <link rel="stylesheet" href="views/css/components/form-fields.css">
         <link rel="stylesheet" href="views/css/components/buttons.css">
+        <link rel="stylesheet" href="views/css/components/modals.css">
         <link rel="stylesheet" href="views/css/login.css">
         <link rel="stylesheet" href="views/css/components/header.css">
         <link rel="stylesheet" href="views/css/products.css">
+        <link rel="stylesheet" href="views/css/services.css">
+        <link rel="stylesheet" href="views/css/components/footer.css">
         <link rel="stylesheet" href="views/css/bootstrap/bootstrap.css">
         <link rel="stylesheet" href="views/css/base.css">
     </head>
@@ -22,6 +25,7 @@
 
         <script src="views/css/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
         <script src="views/css/bootstrap/js/bootstrap.js"></script>
+        <script src="views/js/admin.js" ></script>
 
     </body>
 </html>

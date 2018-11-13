@@ -2,7 +2,7 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
         <a class="d-flex" href="admin">
-            <img src="views/images/raptor-logo.png" class="logo w-25 mr-3 mt-1" alt="logo">
+            <img src="views/images/raptor-logo.png" class="logo w-25 h-25 mr-3 mt-2" alt="logo">
             <div class="profile-div align-self-center">
                 <p class="admin">Administrador</p>
                 <p class="admin-name"><?php echo $_SESSION['name'] ?></p>
@@ -35,7 +35,6 @@
     </div>
 </nav>
 
-<script src="views/js/header.js"></script>
 
 
 
